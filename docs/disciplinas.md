@@ -4,10 +4,10 @@ title: disciplinas
 nav_order: 3
 ---
 
-<span style="green-200"># Tecnólogo em Sistemas para Internet</span>
+# Tecnólogo em Sistemas para Internet
 ## Construção de Páginas Web II
 **Tecnologias:** JavaScript, DOM (Document Object Model), Ajax (Asynchronous Javascript and XML), PHP (Hypertext Preprocessor), etc.
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5778) 
+* [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5778) 
 * [github](https://rodrigoprestesmachado.github.io/cpw2/)
 
 ## Programação para Web II
@@ -20,7 +20,7 @@ nav_order: 3
 * [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5780) 
 * [github](https://rodrigoprestesmachado.github.io/vvs/)
                    
-<span style="green-200"># Mestrado Profissional em Informática na Educação</span>
+# Mestrado Profissional em Informática na Educação
 ## Tecnologias Assistivas para Educação
 **Conteúdos:** Compreensão sobre os tipos de deficiência, entendimento sobre tecnologias assistivas, acessibilidade na Internet, objetos de aprendizagem digitais acessíveis e práticas pedagógicas e ações inclusivas.
 * [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=4138")
