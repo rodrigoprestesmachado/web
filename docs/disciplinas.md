@@ -4,7 +4,7 @@ title: disciplinas
 nav_order: 3
 ---
 
-# Disciplinas 
+# Disciplinas no IFRS
 
 ## Tecnólogo em Sistemas para Internet
 ### Construção de Páginas Web II

@@ -29,5 +29,5 @@ Percepção sonora : discutindo os limites e as possibilidades de interação e 
 
 ## Dissertação
 
-Um serviço de Matchmaking de Interesses Dependentes de Localização - Capítulos disponível em: [1](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_pretextual.pdf), [2](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_01.pdf), [3](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_02.pdf), [4](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_03.pdf), [5](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_04.pdf), [6](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_05.pdf), [7](https://rpmhub.dev/agenda.html) 
+Um serviço de Matchmaking de Interesses Dependentes de Localização - Capítulos disponível em: [1](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_pretextual.pdf), [2](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_01.pdf), [3](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_02.pdf), [4](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_03.pdf), [5](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_04.pdf), [6](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_05.pdf), [7](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_postextual.pdf) 
 {: .fs-3 }
