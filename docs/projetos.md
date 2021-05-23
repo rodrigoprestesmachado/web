@@ -17,5 +17,5 @@ Desenvolvimento de uma plataforma para apoiar cenários de atividades educaciona
 {: .fs-3 }
 
 <center>
-<a href="https://orion-services.dev"><img src="images/orion.png" alt="Orion Services project" width="3%" height="3%"></a>
+<a href="https://orion-services.dev"><img src="images/orion.png" alt="Orion Services project" width="5%" height="5%"></a>
 </center>
