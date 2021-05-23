@@ -3,7 +3,7 @@ layout: default
 title: home
 nav_order: 1
 ---
-# Rodrigo Prestes Machado 
+# Rodrigo Prestes Machado {: .fs-4 }
 
 Possui graduação em Ciência da Computação pela Universidade Católica de Pelotas (UCPel - 2001), mestrado em Informática pela Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio - 2005) e doutorado em Informática na Educação pela Universidade Federal do Rio Grande do Sul (UFRGS - 2019). Desde 2010 atua como professor no Instituto Federal de Educação, Ciência e Tecnologia de Porto Alegre. Entre as suas principais áreas de interesse, destacam-se: interação humano-computador e aprendizagem cooperativa.
 E-mail: rodrigo.prestes at poa.ifrs.edu.br
@@ -15,7 +15,7 @@ Contatos: [Discord](https://discord.gg/C29cqvm)
 Lattes: [ http://lattes.cnpq.br/9833435909646555]( http://lattes.cnpq.br/9833435909646555)
 {: .fs-3 }
 
-## Redes sociais
+## Redes sociais {: .fs-4 }
 
 * [YouTube](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)
 {: .fs-3 }
@@ -26,7 +26,7 @@ Lattes: [ http://lattes.cnpq.br/9833435909646555]( http://lattes.cnpq.br/9833435
 * [Instagram](https://instagram.com/rodrigoprestesmachado?utm_medium=copy_link)
 {: .fs-3 }
 
-## Laboratórios de pesquisa
+## Laboratórios de pesquisa {: .fs-4 }
 
 * [NIEE](http://www.ufrgs.br/niee/)
 {: .fs-3 }
