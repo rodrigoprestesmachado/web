@@ -9,12 +9,15 @@ Possui graduação em Ciência da Computação pela Universidade Católica de Pe
 E-mail: rodrigo.prestes at poa.ifrs.edu.br
 {: .fs-3 }
 
-Contatos: [Discord](https://discord.gg/C29cqvm)
+Currículo [lattes](http://lattes.cnpq.br/9833435909646555)
+{: .fs-3 }
+## Contato 
+
+* e-mail: rodrigo.prestes@poa.ifrs.edu.br
 {: .fs-3 }
 
-Lattes: [ http://lattes.cnpq.br/9833435909646555]( http://lattes.cnpq.br/9833435909646555)
+* Servidor [Discord](https://discord.gg/C29cqvm)
 {: .fs-3 }
-
 ## Redes sociais
 
 * [YouTube](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)

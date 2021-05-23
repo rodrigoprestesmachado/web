@@ -20,7 +20,7 @@ nav_order: 3
 **Tecnologias:** JEE (Java Enterprise Edition), Microprofile, JPA (Java Persistence API), Web Services (SOAP e Rest), Web Sockets, etc. 
 {: .fs-3 }
 
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5779) 
+* [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5779) 
 {: .fs-3 }
 
 * [github](https://rodrigoprestesmachado.github.io/pw2/) 
@@ -30,7 +30,7 @@ nav_order: 3
 **Tecnologias:** Junit, Selenium IDE, PMD, Docker, Maven, etc. 
 {: .fs-3 }
 
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5780) 
+* [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5780) 
 {: .fs-3 }
 
 * [github](https://rodrigoprestesmachado.github.io/vvs/) 
@@ -41,6 +41,6 @@ nav_order: 3
 **Conteúdos:** Compreensão sobre os tipos de deficiência, entendimento sobre tecnologias assistivas, acessibilidade na Internet, objetos de aprendizagem digitais acessíveis e práticas pedagógicas e ações inclusivas. 
 {: .fs-3 }
 
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=4138") 
+* [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=4138") 
 {: .fs-3 }
                    
