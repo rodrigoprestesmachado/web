@@ -1,6 +1,6 @@
 ---
 layout: default
-title: home
+title: publicações
 nav_order: 5
 ---  
 
@@ -11,8 +11,6 @@ nav_order: 5
 * [Orcid](http://orcid.org/0000-0003-0428-6387)
 
 * [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55574842400)
-
-* [Mendley](https://www.mendeley.com/profiles/rodrigo-prestes-machado/)
 
 ## Livros
 
@@ -26,4 +24,4 @@ Percepção sonora : discutindo os limites e as possibilidades de interação e 
 
 ## Dissertação
 
-Um serviço de Matchmaking de Interesses Dependentes de Localização - Capítulos disponível em: [1](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_pretextual.pdf), [2](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_01.pdf), [3](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_02.pdf), [4](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_03.pdf), [5](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_04.pdf), [6](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_07.pdf), [7](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_08.pdf)
+Um serviço de Matchmaking de Interesses Dependentes de Localização - Capítulos disponível em: [1](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_pretextual.pdf), [2](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_01.pdf), [3](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_02.pdf), [4](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_03.pdf), [5](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_04.pdf), [6](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_05.pdf), [7](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_06.pdf)
