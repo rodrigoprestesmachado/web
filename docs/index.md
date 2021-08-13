@@ -10,7 +10,7 @@ Possui graduação em Ciência da Computação pela Universidade Católica de Pe
 
 ## Currículo
 
-[lattes](http://lattes.cnpq.br/9833435909646555)
+* [lattes](http://lattes.cnpq.br/9833435909646555)
 {: .fs-3 }
 
 ## Contato
