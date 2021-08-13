@@ -13,7 +13,7 @@ nav_order: 3
 * [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5778)  
 {: .fs-3 }
 
-* [github](https://rodrigoprestesmachado.github.io/cpw2/) 
+* [web](https://cpw2.rpmhub.dev) 
 {: .fs-3 }
 
 ### Programação para Web II
@@ -23,7 +23,7 @@ nav_order: 3
 * [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5779) 
 {: .fs-3 }
 
-* [github](https://rodrigoprestesmachado.github.io/pw2/) 
+* [web](https://pw2.rpmhub.dev) 
 {: .fs-3 }
 
 ### Validação e Verificação de Sistemas
@@ -33,7 +33,7 @@ nav_order: 3
 * [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5780) 
 {: .fs-3 }
 
-* [github](https://rodrigoprestesmachado.github.io/vvs/) 
+* [web](https://vvs.rpmhub.dev) 
 {: .fs-3 }
                    
 ## Mestrado Profissional em Informática na Educação
