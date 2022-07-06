@@ -15,7 +15,7 @@ Pressione 'F' para tela cheia
 <!-- .element: style="margin-bottom:50px; font-size: 40px; font-family: Marker Felt; color:#F5F5F5" -->
 
 <a href="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/rodrigoprestesmachado/web/dev/docs/slides/devops.puml">
-<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/rodrigoprestesmachado/web/dev/docs/slides/devops.puml" alt="Processo de desenvolvimento (devops)" width="50%" height="50%"/> <br/>
+<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/rodrigoprestesmachado/web/dev/docs/slides/devops.puml" alt="Processo de desenvolvimento (devops)" width="30%" height="30%"/> <br/>
 </a>
 
 
@@ -38,7 +38,7 @@ Pressione 'F' para tela cheia
 <!-- .element: style="margin-bottom:50px; font-size: 40px; font-family: Marker Felt; color:#F5F5F5" -->
 
 <a href="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/rodrigoprestesmachado/web/dev/docs/slides/arquitetura.puml">
-<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/rodrigoprestesmachado/web/dev/docs/slides/arquitetura.puml" alt="Arquitetura" width="50%" height="50%"/> <br/>
+<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/rodrigoprestesmachado/web/dev/docs/slides/arquitetura.puml" alt="Arquitetura" width="30%" height="30%"/> <br/>
 </a>
 
 
