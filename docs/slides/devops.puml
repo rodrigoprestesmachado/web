@@ -1,0 +1,14 @@
+@startuml
+title Devops (sprint)
+start
+:Capturar requisitos;
+:Atribuir issues no github;
+:Modelar issue (uso,
+classes, sequencia, etc.);
+repeat
+  :Escrever testes e codificar;
+repeat while (Pull request: passou nos testes?) is (no)
+->yes;
+:Integração;
+end
+@enduml

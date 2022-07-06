@@ -1,0 +1,28 @@
+@startuml
+title Arquitetura inicial
+
+package "Front-end" {
+  [App (flutter)] as gui
+
+  [Users lib (dart)] as comUser
+  [Flow lib (dart)] as comFlow
+
+  comFlow -up- createTask
+  gui <-> createTask
+
+
+  comUser -up- createStutend
+  createStutend <-> gui
+}
+
+comUser <--> createUser
+comFlow <--> createFlow
+
+
+package "Back-end" {
+  [Users] as users
+  createUser -- users
+  [Flow] as flow
+  createFlow -- flow
+}
+@enduml
