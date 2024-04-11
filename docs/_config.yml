@@ -1,3 +1,7 @@
 remote_theme: pmarsceill/just-the-docs
 logo: "/images/logo.png"
 color_scheme: dark
+
+# Google Analytics
+ga_tracking:  G-R5MTNW4LKS
+ga_tracking_anonymize_ip: true
