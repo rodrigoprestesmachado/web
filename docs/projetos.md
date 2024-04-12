@@ -25,6 +25,7 @@ um serviço de troca de mensagens síncrona e assíncrona entre os estudantes.
 
 Todos os serviços são desenvolvidos sob a licença [(Apache 2.0)](https://www.apache.org/licenses/LICENSE-2.0)
 e estão disponíveis no Github:
+{: .fs-3 }
 
 * [https://github.com/orion-services](https://github.com/orion-services) - Github do projeto.
 {: .fs-3 }
