@@ -11,6 +11,30 @@ estão sendo concebidos dentro do contexto do Mestrado Profissional em
 Informática na Educação do IFRS em Porto Alegre.
 {: .fs-3 }
 
+## Orion Services
+
+O Orion Services são um conjunto de serviços e aplicações de código
+aberto destinados para apoiar o desenvolvimento de sistemas educacionais
+colaborativos. Alguns exemplos de serviços:
+
+Orion Bot - um chatbot do Discord, capaz de coordenar uma atividade pedagógica
+colaborativa entre estudantes. Orion Users - um serviço de identidade,
+autenticação  e autorização dos estudantes dentro da plataforma. Orion Talk -
+um serviço de troca de mensagens síncrona e assíncrona entre os estudantes.
+{: .fs-3 }
+
+Todos os serviços são desenvolvidos sob a licença [(Apache 2.0)](https://www.apache.org/licenses/LICENSE-2.0)
+e estão disponíveis no Github:
+
+* [https://github.com/orion-services](https://github.com/orion-services) - Github do projeto.
+{: .fs-3 }
+
+* [https://orion-services.dev](https://orion-services.dev) - página do projeto.
+{: .fs-3 }
+
+* [Discord](https://discord.gg/XpyGTZPApN) da equipe.
+{: .fs-3 }
+
 ## Xô Dengue
 
 O Xô Dengue é um jogo educacional colaborativo de tabuleiro que visa ensinar
@@ -27,21 +51,4 @@ Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul
 
 Para jogar, acesse a página dedicada ao jogo:
 [https://xodengue.rpmhub.dev](https://xodengue.rpmhub.dev)
-{: .fs-3 }
-
-## Orion Services
-
-O Orion Services são um conjunto de serviços de código
-[(Apache 2.0)](https://www.apache.org/licenses/LICENSE-2.0) aberto destinados
-para apoiar a prototipação e o desenvolvimento
-de sistemas educacionais colaborativos. Alguns exemplos de serviços:
-[Orion Users](https://github.com/orion-services/users) - um serviço de
-autenticação de usuários e [Orion Talk](https://github.com/orion-services/talk)
- - um serviço de troca de mensagens síncrona e assíncrona.
-{: .fs-3 }
-
-* [Página](https://orion-services.dev) do projeto.
-{: .fs-3 }
-
-* [Discord](https://discord.gg/XpyGTZPApN) da equipe.
 {: .fs-3 }
