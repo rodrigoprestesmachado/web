@@ -25,6 +25,14 @@ autenticação e autorização de estudantes dentro dos serviços da plataforma 
 síncrona e assíncrona entre os estudantes.
 {: .fs-3 }
 
+Além disso, o projeto Orion Services também conta com um conjunto de [componentes
+de interface com o usuário](https://ui.orion-services.dev) escritos em
+[Nuxt](https://nuxt.com) e [Vue](https://vuejs.org/) para facilitar a integração
+dos serviços de _backend_ com aplicações Web/Mobile. O projeto é desenvolvido de
+forma colaborativa e aberta, e qualquer pessoa pode contribuir com o
+desenvolvimento dos serviços.
+{: .fs-3 }
+
 Alguns links úteis do projeto:
 {: .fs-3 }
 
