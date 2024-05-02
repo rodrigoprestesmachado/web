@@ -1,6 +1,6 @@
 ---
 layout: default
-title: agenda
+title: Agenda
 nav_order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: publicações
+title: Publicações
 nav_order: 5
 ---
 

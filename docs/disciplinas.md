@@ -1,6 +1,6 @@
 ---
 layout: default
-title: disciplinas
+title: Disciplinas
 nav_order: 3
 ---
 

@@ -3,6 +3,8 @@ remote_theme: pmarsceill/just-the-docs
 favicon_ico: "/images/favicon.png"
 color_scheme: dark
 
+title: "RPM Hub"
+
 aux_links:
   "Lattes":
     - "http://lattes.cnpq.br/9833435909646555"
