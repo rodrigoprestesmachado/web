@@ -3,7 +3,7 @@ remote_theme: pmarsceill/just-the-docs
 favicon_ico: "/images/favicon.png"
 color_scheme: dark
 
-title: "rpmhub.dev"
+title: "rpmhub"
 
 aux_links:
   "Lattes":
