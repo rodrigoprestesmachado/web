@@ -1,9 +1,8 @@
 remote_theme: pmarsceill/just-the-docs
 
-favicon_ico: "/images/favicon.png"
-color_scheme: dark
+logo: "/images/logo.png"
 
-title: "rpm hub"
+favicon_ico: "/images/favicon.png"
 
 aux_links:
   "Lattes":
