@@ -19,6 +19,8 @@ Informática na Educação do IFRS em Porto Alegre.
 O Orion Services são um conjunto de serviços e aplicações de código
 aberto destinados para apoiar o desenvolvimento de sistemas educacionais
 colaborativos. Alguns exemplos de serviços:
+{: .fs-3 }
+
 
 [Users](https://users.orion-services.dev) - um serviço de identidade,
 autenticação e autorização de estudantes dentro dos serviços da plataforma Orion.
