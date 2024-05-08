@@ -13,42 +13,37 @@ Informática na Educação do IFRS em Porto Alegre.
 
 ## Orion Services
 
+[![Discord](https://img.shields.io/discord/713516488601894922?style=flat&label=Discord&color=%23D8FCD3&link=https%3A%2F%2Fdiscord.com%2Finvite%2FXpyGTZPApN)](https://discord.com/invite/XpyGTZPApN)
+{: .fs-3 }
+
 O Orion Services são um conjunto de serviços e aplicações de código
 aberto destinados para apoiar o desenvolvimento de sistemas educacionais
 colaborativos. Alguns exemplos de serviços:
 
-[Bot](https://bot.orion-services.dev) - um chatbot do Discord, capaz de
-coordenar uma atividade pedagógica colaborativa entre estudantes.
 [Users](https://users.orion-services.dev) - um serviço de identidade,
 autenticação e autorização de estudantes dentro dos serviços da plataforma Orion.
 [Talk](https://talk.orion-services.dev) - um serviço de troca de mensagens
 síncrona e assíncrona entre os estudantes.
+[Bot](https://bot.orion-services.dev) - um chatbot do Discord, capaz de
+coordenar uma atividade pedagógica colaborativa entre estudantes.
 {: .fs-3 }
 
 Além disso, o projeto Orion Services também conta com um conjunto de [componentes
 de interface com o usuário](https://ui.orion-services.dev) escritos em
 [Nuxt](https://nuxt.com) e [Vue](https://vuejs.org/) para facilitar a integração
-dos serviços de _backend_ com aplicações Web/Mobile. O projeto é desenvolvido de
-forma colaborativa e aberta, e qualquer pessoa pode contribuir com o
-desenvolvimento dos serviços.
+dos serviços de _backend_ com aplicações Web/Mobile.
 {: .fs-3 }
 
-Alguns links úteis do projeto:
+O projeto é desenvolvido de forma colaborativa e aberta, e qualquer pessoa pode
+contribuir com o desenvolvimento dos serviços e aplicações. Para saber mais,
+acesse a página do projeto:
 {: .fs-3 }
 
-* [https://orion-services.dev](https://orion-services.dev) - página do projeto.
-{: .fs-3 }
-
-* [https://github.com/orion-services](https://github.com/orion-services) -
-Github do projeto.
-{: .fs-3 }
-
-* [Discord](https://discord.gg/XpyGTZPApN) da equipe.
-{: .fs-3 }
-
-Todos os serviços são desenvolvidos sob a licença
-[(Apache 2.0)](https://www.apache.org/licenses/LICENSE-2.0).
-{: .fs-3 }
+<center>
+	<a href="https://orion-services.dev">
+		<img src="/images/orion-logo.png" alt="Orion Services" width="30%">
+	</a
+</center>
 
 ## Xô Dengue
 

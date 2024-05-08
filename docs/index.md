@@ -32,5 +32,5 @@ Possui graduação em Ciência da Computação pela Universidade Católica de Pe
 {: .fs-3 }
 
 <center>
-	<img src="/images/mark.png" alt="Logo Rodrigo Prestes Machado" width="60%">
+	<img src="/images/mark.png" alt="Logo Rodrigo Prestes Machado" width="40%">
 </center>
