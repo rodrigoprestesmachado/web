@@ -42,7 +42,7 @@ acesse a página do projeto:
 <center>
 	<a href="https://orion-services.dev">
 		<img src="/images/orion-logo.png" alt="Orion Services" width="30%">
-	</a
+	</a>
 </center>
 
 ## Xô Dengue
