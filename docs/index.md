@@ -32,5 +32,5 @@ colaborativa.
 {: .fs-3 }
 
 <center>
-	<img src="/images/mark.png" alt="Logo Rodrigo Prestes Machado" width="30%">
+	<img src="/images/mark.png" alt="Logo Rodrigo Prestes Machado" width="20%">
 </center>
