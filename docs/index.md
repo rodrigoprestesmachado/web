@@ -5,7 +5,7 @@ nav_order: 1
 ---
 # Rodrigo Prestes Machado
 
-[![Discord](https://img.shields.io/discord/717400933075648574?style=flat&label=Discord&color=%235F86AF)](https://discord.gg/C29cqvm)
+[![Static Badge](https://img.shields.io/badge/Discord%20-%20Rodrigo%20Prestes%20Machado%20-%20%237792C8)](https://discord.gg/C29cqvm)
 
 Possui graduação em Ciência da Computação pela Universidade Católica de Pelotas
 (UCPel - 2001), mestrado em Informática pela Pontifícia Universidade Católica do
