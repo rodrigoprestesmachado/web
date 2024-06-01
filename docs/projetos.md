@@ -13,7 +13,7 @@ Informática na Educação do IFRS em Porto Alegre.
 
 ## Orion Services
 
-[![Static Badge](https://img.shields.io/badge/Discord%20-%20Orion%20Services%20-%20%23FBB302)](https://discord.com/invite/XpyGTZPApN)
+[![Static Badge](https://img.shields.io/badge/Discord%20-%20Orion%20Services%20-%20%23FBB302)](https://discord.gg/XkZQw3hbDn)
 {: .fs-3 }
 
 O Orion Services são um conjunto de serviços e aplicações de código
