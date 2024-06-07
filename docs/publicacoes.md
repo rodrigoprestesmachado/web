@@ -17,11 +17,6 @@ livros que foram produzidos.
 * [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55574842400)
 {: .fs-3 }
 
-## Vídeos
-
-* [YouTube](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)
-{: .fs-3 }
-
 ## Livros
 
 * BERTAGNOLLI, Sílvia de Castro; MACHADO, Rodrigo Prestes (org.). Pesquisas em informática na educação: teorias, práticas e perspectivas. Porto Alegre, RS: IFRS, 2020. 247 p. ISBN 9786586734102. Disponível em: [https://repositorio.ifrs.edu.br/handle/123456789/206](https://repositorio.ifrs.edu.br/handle/123456789/206). Acesso em: 1 fev. 2021.
@@ -38,4 +33,9 @@ Percepção sonora : discutindo os limites e as possibilidades de interação e 
 ## Mestrado
 
 Um serviço de Matchmaking de Interesses Dependentes de Localização - Capítulos disponível em: [1](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_pretextual.pdf), [2](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_01.pdf), [3](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_02.pdf), [4](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_03.pdf), [5](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_04.pdf), [6](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_05.pdf), [7](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_postextual.pdf) 
+{: .fs-3 }
+
+## Vídeos
+
+* [YouTube](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)
 {: .fs-3 }
