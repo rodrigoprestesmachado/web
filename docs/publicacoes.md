@@ -17,6 +17,11 @@ livros que foram produzidos.
 * [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55574842400)
 {: .fs-3 }
 
+## Vídeos
+
+* [YouTube]([http://orcid.org/0000-0003-0428-6387](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/))
+{: .fs-3 }
+
 ## Livros
 
 * BERTAGNOLLI, Sílvia de Castro; MACHADO, Rodrigo Prestes (org.). Pesquisas em informática na educação: teorias, práticas e perspectivas. Porto Alegre, RS: IFRS, 2020. 247 p. ISBN 9786586734102. Disponível em: [https://repositorio.ifrs.edu.br/handle/123456789/206](https://repositorio.ifrs.edu.br/handle/123456789/206). Acesso em: 1 fev. 2021.
