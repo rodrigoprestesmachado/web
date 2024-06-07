@@ -19,7 +19,7 @@ livros que foram produzidos.
 
 ## Vídeos
 
-* [YouTube](http://orcid.org/0000-0003-0428-6387](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)
+* [YouTube](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)
 {: .fs-3 }
 
 ## Livros
