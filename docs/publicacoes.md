@@ -8,6 +8,7 @@ nav_order: 5
 
 Below are listed some publications in journals, conferences, and books that have
 been produced.
+{: .fs-3 }
 
 ## Articles
 

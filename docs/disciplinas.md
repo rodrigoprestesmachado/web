@@ -8,6 +8,7 @@ nav_order: 3
 
 This page lists some of the courses being offered at the Federal Institute of
 Education, Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
+{: .fs-3 }
 
 ## Technologist in Internet Systems
 
@@ -43,7 +44,7 @@ Persistence API), Web Services (SOAP and Rest), Web Sockets, etc.
 * [Web](https://vvs.rpmhub.dev)
 {: .fs-3 }
 
-## Professional Master's in Informatics in Education
+## Master's in Informatics in Education
 
 ### Assistive Technologies for Education
 
