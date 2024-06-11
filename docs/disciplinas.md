@@ -1,21 +1,20 @@
 ---
 layout: default
-title: Disciplinas
+title: Courses
 nav_order: 3
 ---
 
-# Disciplinas no IFRS
+# Courses at IFRS
 
-Nesta página estão listadas algumas das disciplinas que estão sendo ministradas
-no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul
-(IFRS) em Porto Alegre.
+This page lists some of the courses being offered at the Federal Institute of
+Education, Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
 
-## Tecnólogo em Sistemas para Internet
+## Technologist in Internet Systems
 
-### Construção de Páginas Web II
+### Web Page Construction II
 
-**Tecnologias:** JavaScript, DOM (Document Object Model), Ajax (Asynchronous
-Javascript and XML), PHP (Hypertext Preprocessor), etc.
+**Technologies:** JavaScript, DOM (Document Object Model), Ajax (Asynchronous
+JavaScript and XML), PHP (Hypertext Preprocessor), etc.
 {: .fs-3 }
 
 * [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5778)
@@ -23,10 +22,10 @@ Javascript and XML), PHP (Hypertext Preprocessor), etc.
 * [Web](https://cpw2.rpmhub.dev)
 {: .fs-3 }
 
-### Programação para Web II
+### Web Programming II
 
-**Tecnologias:** JEE (Java Enterprise Edition), Microprofile, JPA (Java
-Persistence API), Web Services (SOAP e Rest), Web Sockets, etc.
+**Technologies:** JEE (Java Enterprise Edition), Microprofile, JPA (Java
+Persistence API), Web Services (SOAP and Rest), Web Sockets, etc.
 {: .fs-3 }
 
 * [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5779)
@@ -34,9 +33,9 @@ Persistence API), Web Services (SOAP e Rest), Web Sockets, etc.
 * [Web](https://pw2.rpmhub.dev)
 {: .fs-3 }
 
-### Validação e Verificação de Sistemas
+### System Validation and Verification
 
-**Tecnologias:** Junit, Selenium IDE, PMD, Docker, Maven, etc.
+**Technologies:** JUnit, Selenium IDE, PMD, Docker, Maven, etc.
 {: .fs-3 }
 
 * [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5780)
@@ -44,14 +43,14 @@ Persistence API), Web Services (SOAP e Rest), Web Sockets, etc.
 * [Web](https://vvs.rpmhub.dev)
 {: .fs-3 }
 
-## Mestrado Profissional em Informática na Educação
+## Professional Master's in Informatics in Education
 
-### Tecnologias Assistivas para Educação
+### Assistive Technologies for Education
 
-**Conteúdos:** Compreensão sobre os tipos de deficiência, entendimento sobre
-tecnologias assistivas, acessibilidade na Internet, objetos de aprendizagem
-digitais acessíveis e práticas pedagógicas e ações inclusivas.
+**Contents:** Understanding different types of disabilities, knowledge of
+assistive technologies, internet accessibility, accessible digital learning
+objects, and inclusive pedagogical practices and actions.
 {: .fs-3 }
 
-* [moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=4138")
+* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=4138")
 {: .fs-3 }

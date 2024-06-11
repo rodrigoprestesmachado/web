@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Projetos
+title: Projects
 nav_order: 4
 ---
 
-# Projetos de Pesquisa
+# Research Projects
 
-Aqui estão listados alguns dos projetos de pesquisa e de desenvolvimento que
-estão sendo concebidos dentro do contexto do Mestrado Profissional em
-Informática na Educação do IFRS em Porto Alegre.
+Here are listed some of the research and development projects being conceived
+within the context of the Professional Master's in Informatics in Education at
+IFRS in Porto Alegre.
 {: .fs-3 }
 
 ## Orion Services
@@ -16,29 +16,27 @@ Informática na Educação do IFRS em Porto Alegre.
 [![Static Badge](https://img.shields.io/badge/Discord%20-%20Orion%20Services%20-%20%23FBB302)](https://discord.gg/XkZQw3hbDn)
 {: .fs-3 }
 
-O Orion Services são um conjunto de serviços e aplicações de código
-aberto destinados para apoiar o desenvolvimento de sistemas educacionais
-colaborativos. Alguns exemplos de serviços:
+Orion Services are a set of open-source services and applications designed to
+support the development of collaborative educational systems. Some examples of services include:
 {: .fs-3 }
 
-
-[Users](https://users.orion-services.dev) - um serviço de identidade,
-autenticação e autorização de estudantes dentro dos serviços da plataforma Orion.
-[Talk](https://talk.orion-services.dev) - um serviço de troca de mensagens
-síncrona e assíncrona entre os estudantes.
-[Bot](https://bot.orion-services.dev) - um chatbot do Discord, capaz de
-coordenar uma atividade pedagógica colaborativa entre estudantes.
+[Users](https://users.orion-services.dev) - an identity, authentication, and a
+uthorization service for students within the Orion platform services.
+[Talk](https://talk.orion-services.dev) - a service for synchronous and
+asynchronous message exchange between students.
+[Bot](https://bot.orion-services.dev) - a Discord chatbot capable of
+coordinating a collaborative pedagogical activity among students.
 {: .fs-3 }
 
-Além disso, o projeto Orion Services também conta com um conjunto de [componentes
-de interface com o usuário](https://ui.orion-services.dev) escritos em
-[Nuxt](https://nuxt.com) e [Vue](https://vuejs.org/) para facilitar a integração
-dos serviços de _backend_ com aplicações Web/Mobile.
+Additionally, the Orion Services project also features a set of
+[user interface components](https://ui.orion-services.dev) written in
+[Nuxt](https://nuxt.com) and [Vue](https://vuejs.org/) to facilitate the
+integration of backend services with Web/Mobile applications.
 {: .fs-3 }
 
-O projeto é desenvolvido de forma colaborativa e aberta, e qualquer pessoa pode
-contribuir com o desenvolvimento dos serviços e aplicações. Para saber mais,
-acesse a página do projeto:
+The project is developed collaboratively and openly, and anyone can contribute
+to the development of services and applications. To learn more, visit the
+project page:
 {: .fs-3 }
 
 <center>
@@ -49,18 +47,18 @@ acesse a página do projeto:
 
 ## Xô Dengue
 
-O Xô Dengue é um jogo educacional colaborativo de tabuleiro que visa ensinar
-crianças e adolescentes de forma divertida sobre o combate ao mosquito Aedes
-aegypti, responsável pela propagação da dengue.
+Xô Dengue is a collaborative educational board game aimed at teaching children
+and adolescents in a fun way about combating the Aedes aegypti mosquito,
+responsible for the spread of dengue.
 {: .fs-3 }
 
-O jogo foi desenvolvido como resultado do estudo sobre Aprendizagem Cooperativa
-durante o decorrer de duas disciplinas do  Mestrado Profissional em
-Informática na Educação ([MPIE](https://mpie.poa.ifrs.edu.br)) do Instituto
-Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul
-([IFRS](https://poa.ifrs.edu.br)) em Porto Alegre.
+The game was developed as a result of a study on Cooperative Learning during
+the course of two disciplines of the Professional Master's in Informatics in
+Education ([MPIE](https://mpie.poa.ifrs.edu.br)) at the Federal Institute of
+Education, Science, and Technology of Rio Grande do Sul
+([IFRS](https://poa.ifrs.edu.br)) in Porto Alegre.
 {: .fs-3 }
 
-Para jogar, acesse a página dedicada ao jogo:
+To play, visit the dedicated game page:
 [https://xodengue.rpmhub.dev](https://xodengue.rpmhub.dev)
 {: .fs-3 }
