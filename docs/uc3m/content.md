@@ -16,7 +16,7 @@ Press 'F' to full screen
 
 
 <!-- .slide: data-background="#B1F05D" data-transition="convex" -->
-## First: some presentation
+## Presentation
 <!-- .element: style="margin-bottom:20px; font-size: 40px; color:black; font-family: Comic Sans MS;" -->
 
 
@@ -41,10 +41,10 @@ Press 'F' to full screen
 
 <!-- .slide: data-background-opacity="0.9" data-background-image="img/poa.png" data-transition="slide" -->
 ## Porto Alegre
-<!-- .element: style="margin-bottom:100px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
+<!-- .element: style="margin-bottom:100px; font-size: 20px; color:white; font-family: Comic Sans MS;" -->
 
 
-<!-- .slide: data-background-opacity="0.3" data-transition="concave" data-background-image="img/ifrspoa.jpg" -->
+<!-- .slide: data-background-opacity="0.6" data-transition="concave" data-background-image="img/ifrspoa.jpg" -->
 ## Instituto Federal do Rio Grande do Sul (IFRS)
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
@@ -101,14 +101,105 @@ Press 'F' to full screen
 
 * **Problem:** People with visual impairments face challenges in synchronous applications.
 <!-- .element: style="margin-bottom:30px; font-size: 35px; color:white; font-family:Optima;" -->
-  * Examples: Who enters the room? Who changes the document? Who sends a message?
+  * Questions: Who enters the room? Who sends a message? Who changes the document? and so on.
 <!-- .element: style="margin-bottom:70px; font-size: 25px; color:white; font-family:Optima;" -->
 
 * **Objective:** Develop a sound awareness system to support people with visual impairments in synchronous and cooperative learning applications.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 
-<!-- .slide: data-background-opacity="0.8" data-background-image="img/editor.png" data-transition="slide" -->
+<!-- .slide: data-background-opacity="1" data-background-image="img/editor.png" data-transition="slide" -->
+
+
+<!-- .slide: data-background-opacity="1" data-background-image="img/circle.png" data-transition="slide" -->
+
+
+<!-- .slide: data-background="#495575" data-transition="convex" -->
+## Examples of sound awareness
+<!-- .element: style="margin-bottom:70px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
+
+| Action                                  | Description                                                                            |
+|-----------------------------------------|----------------------------------------------------------------------------------------|
+| **The user enters the room**            | 1. Plays an abstract sound (earcon)<br>2. Announces the number of connected users<br>3. Speaks the name of each connected users using TTS    |
+| **A colleague enters/leaves room**      | 1. Speaks the name of the user who entered or left the room using TTS                                       |
+| **The user receives a message**         | 1. Plays a bubble popping sound (auditory icon)<br>2. Using Live Region Speaks the receiving message  |
+| **The user ends a contribution**        | 1. Plays an earcon <br>2. Using Live Regions, announces the name and status of each connected user<br>3. Moves the cursor of the user to chat message  |
+
+<!-- .element: style="margin-bottom:70px; font-size: 23px; color:white; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#495575" data-transition="convex" -->
+## Examples of shortcuts
+<!-- .element: style="margin-bottom:70px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
+
+| Shortcut                                | Description                                                                            |
+|-----------------------------------------|----------------------------------------------------------------------------------------|
+| **alt + shift + 1**                     | 1. Describes the name, rounds, and status of each participant via TTS                  |
+| **crtl + 1**                            | 1. Moves the cursor to the participants area <br>2. Plays a vibration sound            |
+| **alt + number (1 to 9)**               | 1. Reads the last (1 to 9) chat messages via TTS                                       |
+| **crtl + 2**                            | 1. Moves the cursor to chat area <br>2. Plays a vibration sound                         |
+| **alt + shift + 3**                     | 1. Reads the entire text via TTS                                                       |
+| **crtl + 3**                            | 1. Moves the cursor to the text area <br>2. Plays a vibration sound                          |
+
+<!-- .element: style="margin-bottom:70px; font-size: 23px; color:white; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#495575" data-transition="convex" -->
+## Considerations
+<!-- .element: style="margin-bottom:20px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
+
+* Shared objects in the workspace tend to demand more awareness information, and for
+this reason, it is necessary to constantly inform participants during the
+activity.
+<!-- .element: style="margin-bottom:35px; font-size: 23px; color:white; font-family:Optima;" -->
+
+* The communication is fundamental to support awareness, corroborating with
+Bjerstedt-Blom and Winberg (2006), McGookin and Brewster (2007), Kuber, Yu,
+and McAllister (2007).
+<!-- .element: style="margin-bottom:35px; font-size: 23px; color:white; font-family:Optima;" -->
+
+* Earcons, were not sufficient for subjects to remember their functionalities when used
+in low-frequency situations.
+<!-- .element: style="margin-bottom:35px; font-size: 25px; color:white; font-family:Optima;" -->
+
+* On the other hand, notifications that used speech were remembered even in
+low-frequency situations.
+<!-- .element: style="margin-bottom:35px; font-size: 23px; color:white; font-family:Optima;" -->
+
+* There is an inversely proportional relationship between the subjects'
+experience and the need for shortcut implementation.
+<!-- .element: style="margin-bottom:35px; font-size: 23px; color:white; font-family:Optima;" -->
+
+* However, movement shortcuts have proven to be essential for the navigation.
+<!-- .element: style="margin-bottom:35px; font-size: 23px; color:white; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#495575" data-transition="convex" -->
+## Research in this area
+<!-- .element: style="margin-bottom:70px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
+
+* Some studies have explored the use of sound awareness in synchronous and collaborative
+applications: Ramos Torres et al. (2020), Lee et al. (2022), Das et al. (2022), Potluri et al.
+(2022), Rocha et al. (2023), and Guarese (2023).
+<!-- .element: style="margin-bottom:35px; font-size: 25px; color:white; font-family:Optima;" -->
+
+* The use of auditory feedback is a central aspect present in several studies.
+<!-- .element: style="margin-bottom:35px; font-size: 25px; color:white; font-family:Optima;" -->
+
+* Overload of auditory feedback.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+
+* Need for more efficient navigation methods.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+
+* Need to further explore haptic awareness.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+
+* Difficulties in memorization when audio uses specific timbres for each user.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+
+* When using spatial audio, limitations in the awareness of distance and direction .
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
 
 
 <!-- .slide: data-background="#FFFDF8" data-transition="convex" -->
@@ -125,6 +216,9 @@ https://orion-services.dev
 * Orion Services aims to develop a set of microservices ([Quarkus](https://quarkus.io)) and
 User Interfaces ([Nuxt](https://nuxt.com)) to support the development of
 collaborative learning applications.
+<!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
+
+* It was inspired by the decomposition of the Cooperative Editor subsystems.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 * Offers a suite of scalable, free, and open-source microservices under the
