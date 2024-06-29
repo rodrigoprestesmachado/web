@@ -5,7 +5,7 @@
 Instituto Federal do Rio Grande do Sul (IFRS)
 <!-- .element: style="margin-bottom:10px; font-size: 30px; color:white; font-family:Optima;" -->
 
-rodrigo.prestes@poa.ifrs.edu.br
+https://rpmhub.dev
 <!-- .element: style="margin-bottom:100px; font-size: 30px; color:white; font-family:Optima;" -->
 
 Press 'F' to full screen
@@ -202,23 +202,21 @@ applications: Ramos Torres et al. (2020), Lee et al. (2022), Das et al. (2022), 
 <!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
 
 
-<!-- .slide: data-background="#FFFDF8" data-transition="convex" -->
-![imagem](https://orion-services.dev/assets/img/logo-horizontal-1.png) <!-- .element: style="height: 60%; width: 60%; background-color: white" -->
-
-https://orion-services.dev
-<!-- .element: style="margin-bottom:10px; font-size: 20px; color:white; font-family:Optima;" -->
+<!-- .slide: data-background="#B1F05D" data-transition="convex" -->
+## 2. Orion Services
+<!-- .element: style="margin-bottom:50px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
 ## Orion Services
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
+* It was inspired by the decomposition of the Cooperative Editor in small services.
+<!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
+
 * Orion Services aims to develop a set of microservices ([Quarkus](https://quarkus.io)) and
 User Interfaces ([Nuxt](https://nuxt.com)) to support the development of
 collaborative learning applications.
-<!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
-
-* It was inspired by the decomposition of the Cooperative Editor subsystems.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 * Offers a suite of scalable, free, and open-source microservices under the
@@ -239,12 +237,23 @@ Apache 2.0 license.
 * [UI Components](https://ui.orion-services.dev): a set of reusable components (login, chat, editor) for Web applications.
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* [Bot](https://bot.orion-services.dev): a Discord chatbot service for educational purposes.
-<!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
-
 * [Revision](https://orion-services.github.io/revision/): a service to analyze and provide feedback on students' Github projects.
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
+* [Bot](https://bot.orion-services.dev): a Discord chatbot service for educational purposes.
+<!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#FFFDF8" data-transition="convex" -->
+![imagem](https://orion-services.dev/assets/img/logo-horizontal-1.png) <!-- .element: style="height: 50%; width: 50%; background-color: white" -->
+
+https://orion-services.dev
+<!-- .element: style="margin-bottom:10px; font-size: 30px; color:white; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#B1F05D" data-transition="convex" -->
+## 3. Intelligent Cooperative Learning Chatbot
+<!-- .element: style="margin-bottom:50px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
