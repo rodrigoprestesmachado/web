@@ -1,4 +1,4 @@
-<!-- .slide: data-background-opacity="0.3" data-background-image="img/title.jpg" data-transition="convex" -->
+<!-- .slide: data-background-opacity="0.2" data-background-image="img/title.jpg" data-transition="convex" -->
 # Rodrigo Prestes Machado
 <!-- .element: style="margin-bottom:10px; font-size: 60px; color:white; font-family: Comic Sans MS;" -->
 
@@ -60,7 +60,7 @@ Press 'F' to full screen
 * 17 campuses across Rio Grande do Sul
 <!-- .element: style="margin-bottom:70px; font-size: 40px; color:white; font-family:Optima;" -->
 
-* Offers technical courses, undergraduate degrees, and postgraduate studies
+* Offers technical education, college and postgraduate courses
 <!-- .element: style="margin-bottom:70px; font-size: 40px; color:white; font-family:Optima;" -->
 
 
@@ -102,17 +102,18 @@ Press 'F' to full screen
 
 * **Problem:** People with visual impairments face challenges in synchronous applications.
 <!-- .element: style="margin-bottom:30px; font-size: 35px; color:white; font-family:Optima;" -->
-  * Questions: Who enters the room? Who sends a message? Who changes the document? and so on.
+  * Questions: Who enters the room? Who sends a message? Who changes the shared "document"? and so on.
 <!-- .element: style="margin-bottom:70px; font-size: 25px; color:white; font-family:Optima;" -->
 
-* **Objective:** Develop a sound awareness system to support people with visual impairments in synchronous and cooperative learning applications.
+* **Objective:** Develop an accessibility to support people with visual
+impairments in **synchronous and cooperative learning** applications.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 
-<!-- .slide: data-background-opacity="1" data-background-image="img/editor.png" data-transition="slide" -->
-
-
 <!-- .slide: data-background-opacity="1" data-background-image="img/circle.png" data-transition="slide" -->
+
+
+<!-- .slide: data-background-opacity="1" data-background-image="img/editor.png" data-transition="slide" -->
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
@@ -150,7 +151,7 @@ Press 'F' to full screen
 <!-- .element: style="margin-bottom:20px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
 
 * Shared objects in the workspace tend to demand more awareness information, and for
-this reason, it is necessary to constantly inform participants during the
+this reason, it is necessary to constantly notify the participants during the
 activity.
 <!-- .element: style="margin-bottom:35px; font-size: 23px; color:white; font-family:Optima;" -->
 
@@ -159,8 +160,8 @@ Bjerstedt-Blom and Winberg (2006), McGookin and Brewster (2007), Kuber, Yu,
 and McAllister (2007).
 <!-- .element: style="margin-bottom:35px; font-size: 23px; color:white; font-family:Optima;" -->
 
-* Earcons, were not sufficient for subjects to remember their functionalities when used
-in low-frequency situations.
+* Earcons, were not sufficient for subjects to remember their functionalities
+when used in low-frequency situations.
 <!-- .element: style="margin-bottom:35px; font-size: 25px; color:white; font-family:Optima;" -->
 
 * On the other hand, notifications that used speech were remembered even in
@@ -177,30 +178,27 @@ experience and the need for shortcut implementation.
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
 ## Research in this area
-<!-- .element: style="margin-bottom:70px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
+<!-- .element: style="margin-bottom:50px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
 
 * Some studies have explored the use of sound awareness in synchronous and collaborative
 applications: Ramos Torres et al. (2020), Lee et al. (2022), Das et al. (2022), Potluri et al.
 (2022), Rocha et al. (2023), and Guarese (2023).
-<!-- .element: style="margin-bottom:35px; font-size: 25px; color:white; font-family:Optima;" -->
-
-* The use of auditory feedback is a central aspect present in several studies.
-<!-- .element: style="margin-bottom:35px; font-size: 25px; color:white; font-family:Optima;" -->
+<!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
 * Overload of auditory feedback.
-<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+<!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
 * Need for more efficient navigation methods.
-<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+<!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
 * Need to further explore haptic awareness.
-<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+<!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
 * Difficulties in memorization when audio uses specific timbres for each user.
-<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+<!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
 * When using spatial audio, limitations in the awareness of distance and direction .
-<!-- .element: style="margin-bottom:30px; font-size: 25px; color:white; font-family:Optima;" -->
+<!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
 
 <!-- .slide: data-background="#B1F05D" data-transition="convex" -->
@@ -212,7 +210,7 @@ applications: Ramos Torres et al. (2020), Lee et al. (2022), Das et al. (2022), 
 ## Orion Services
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
-* It was inspired by the decomposition of the Cooperative Editor in small services.
+* It was inspired by the decomposition of the Cooperative Editor in services.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 * Orion Services aims to develop a set of microservices ([Quarkus](https://quarkus.io)) and
@@ -232,16 +230,16 @@ Apache 2.0 license.
 * [Users](https://users.orion-services.dev): a small identity service intended for prototyping.
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* [Talk](https://talk.orion-services.dev): message service
+* [Talk](https://talk.orion-services.dev): a message service
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
 * [UI Components](https://ui.orion-services.dev): a set of reusable components (login, chat, editor) for Web applications.
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* [Revision](https://orion-services.github.io/revision/): a service to analyze and provide feedback on students' Github projects.
+* [Revision](https://orion-services.github.io/revision/): An experimental service designed to analyze tests and provide feedback on students' GitHub repositories.
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* [Bot](https://bot.orion-services.dev): a Discord chatbot service for educational purposes.
+* [Bot](https://bot.orion-services.dev): a Discord chatbot to coordinate group formation and work in cooperative learning activities.
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
 
