@@ -256,13 +256,14 @@ https://orion-services.dev
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
-## High Drop-Out Rates
+## Intelligent Cooperative Learning Chatbot
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
-* Many learners do not complete their courses.
+* The main idea is to develop an intelligent chatbot to support Cooperative Learning
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* Key factor: Lack of social interaction (Aldowah et al., 2019).
+* The "intelligent" part is related to the use of open generative models like
+Meta Llama 3, Phi 3, Mistral, Gemma 2, and so on.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 
@@ -280,29 +281,59 @@ improving knowledge retention in online courses.
   * Promotes a deeper understanding of course content.
   <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
-  * Develops interactive abilities with self, others, society, and nature.
-  <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
-
   * Promotes reciprocity and common good.
   <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
-### AI and Cooperative Learning applying in MOOCs
+## Intelligent Cooperative Learning Chatbot
 <!-- .element: style="margin-bottom:50px; font-size: 45px; color:white; font-family: Comic Sans MS;" -->
 
-* **Group Coordination**: A chatbot could apply Cooperative Learning pedagogical
-principles to coordinate group formation.
+* **Group Coordination**: A intelligent chatbot could apply Cooperative Learning
+pedagogical principles to coordinate group formation and work.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* **Progress Monitoring**: AI can monitor progress and provide personalized
-feedback and guidance.
+* **Progress Monitoring**: A intelligent chatbot can monitor progress and
+provide personalized feedback and guidance.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* **Facilitating Learning**: AI can play the role of a student in a group,
-facilitating the learning process through appropriate interventions when forming
-groups is challenging.
+* **Facilitating Learning**: A intelligent chatbot can play the role of a student
+in a group, facilitating group formation and process.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#495575" data-transition="convex" -->
+## Main Research Question
+<!-- .element: style="margin-bottom:120px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
+
+How do students' interactions with chatbots equipped with open generative models influence their learning and academic development?
+<!-- .element: style="margin-bottom:70px; font-size: 35px; color:white; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#495575" data-transition="convex" -->
+## Research Questions
+<!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
+
+* Are there measurable improvements in grades or content comprehension?
+<!-- .element: style="margin-bottom:25px; font-size: 24px; color:white; font-family:Optima;" -->
+
+* Do students consider the responses from chatbots to be reliable and accurate?
+<!-- .element: style="margin-bottom:25px; font-size: 24px; color:white; font-family:Optima;" -->
+
+* What are the main limitations perceived by students when using these chatbots?
+<!-- .element: style="margin-bottom:25px; font-size: 24px; color:white; font-family:Optima;" -->
+
+* Do these interactions contribute to the development of critical thinking and problem-solving skills?
+<!-- .element: style="margin-bottom:25px; font-size: 24px; color:white; font-family:Optima;" -->
+
+* Do students develop an excessive dependence on these tools?
+<!-- .element: style="margin-bottom:25px; font-size: 24px; color:white; font-family:Optima;" -->
+
+* Is there an increase in students' autonomy and self-efficacy?
+<!-- .element: style="margin-bottom:25px; font-size: 24px; color:white; font-family:Optima;" -->
+
+* Are there significant variations in the use and impact of these chatbots across different educational institutions or fields of study?
+<!-- .element: style="margin-bottom:25px; font-size: 24px; color:white; font-family:Optima;" -->
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
