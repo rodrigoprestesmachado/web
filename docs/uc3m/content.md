@@ -60,7 +60,7 @@ Press 'F' to full screen
 * 17 campuses across Rio Grande do Sul
 <!-- .element: style="margin-bottom:70px; font-size: 40px; color:white; font-family:Optima;" -->
 
-* Offers technical education, college and postgraduate courses
+* Offers technical education, undergraduate, and postgraduate courses.
 <!-- .element: style="margin-bottom:70px; font-size: 40px; color:white; font-family:Optima;" -->
 
 
@@ -85,6 +85,24 @@ Press 'F' to full screen
 <!-- .element: style="margin-bottom:70px; font-size: 40px; color:white; font-family:Optima;" -->
 
 
+<!-- .slide: data-background="#495575" data-transition="convex" -->
+## Rodrigo Prestes Machado role in IFRS
+<!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
+
+* Master in Computer Science PUC-Rio - 2006
+<!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
+
+* Since 2010 works in IFRS as a programming teacher (JavaScript, Java and tests)
+for technical education and college students.
+<!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
+
+* PHD in Computer and Education UFRGS - 2019
+<!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
+
+* In 2022 stared to work with master students of Computer and Education.
+<!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
+
+
 
 <!-- .slide: data-background="#B1F05D" data-transition="convex" -->
 ## Projects
@@ -98,14 +116,14 @@ Press 'F' to full screen
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
 ## Sound awareness in synchronous and cooperative learning applications for people with visual impairments
-<!-- .element: style="margin-bottom:50px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
+<!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family: Comic Sans MS;" -->
 
 * **Problem:** People with visual impairments face challenges in synchronous applications.
 <!-- .element: style="margin-bottom:30px; font-size: 35px; color:white; font-family:Optima;" -->
   * Questions: Who enters the room? Who sends a message? Who changes the shared "document"? and so on.
 <!-- .element: style="margin-bottom:70px; font-size: 25px; color:white; font-family:Optima;" -->
 
-* **Objective:** Develop an accessibility to support people with visual
+* **Objective:** Develop accessibility to support people with visual
 impairments in **synchronous and cooperative learning** applications.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
@@ -122,10 +140,10 @@ impairments in **synchronous and cooperative learning** applications.
 
 | Action                                  | Description                                                                            |
 |-----------------------------------------|----------------------------------------------------------------------------------------|
-| **The user enters the room**            | 1. Plays an abstract sound (earcon)<br>2. Announces the number of connected users<br>3. Speaks the name of each connected users using TTS    |
+| **The user enters the room**            | 1. Plays an abstract sound (earcon)<br>2. Announces the number of connected users<br>3. Speaks the name of each connected users using text-to-speech (TTS)    |
 | **A colleague enters/leaves room**      | 1. Speaks the name of the user who entered or left the room using TTS                                       |
-| **The user receives a message**         | 1. Plays a bubble popping sound (auditory icon)<br>2. Using Live Region Speaks the receiving message  |
-| **The user ends a contribution**        | 1. Plays an earcon <br>2. Using Live Regions, announces the name and status of each connected user<br>3. Moves the cursor of the user to chat message  |
+| **The user receives a message**         | 1. Plays a bubble popping sound (auditory icon)<br>2. Use navigator Live Region to announce the received message  |
+| **The user ends a contribution**        | 1. Plays an earcon <br>2. Use Live Region, announces the name and status of each connected user<br>3. Moves the cursor of the user to chat message  |
 
 <!-- .element: style="margin-bottom:70px; font-size: 23px; color:white; font-family:Optima;" -->
 
@@ -147,7 +165,7 @@ impairments in **synchronous and cooperative learning** applications.
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
-## Considerations
+## Some Considerations
 <!-- .element: style="margin-bottom:20px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
 
 * Shared objects in the workspace tend to demand more awareness information, and for
@@ -177,7 +195,7 @@ experience and the need for shortcut implementation.
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
-## Research in this area
+## Future Work
 <!-- .element: style="margin-bottom:50px; font-size: 35px; color:white; font-family: Comic Sans MS;" -->
 
 * Some studies have explored the use of sound awareness in synchronous and collaborative
@@ -191,13 +209,14 @@ applications: Ramos Torres et al. (2020), Lee et al. (2022), Das et al. (2022), 
 * Need for more efficient navigation methods.
 <!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
-* Need to further explore haptic awareness.
+* Difficulties in memorization when audio uses timbres (guitar, flute, etc.) to
+identify each user.
 <!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
-* Difficulties in memorization when audio uses specific timbres for each user.
+* Limitations in spacial sounds to identify users.
 <!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
-* When using spatial audio, limitations in the awareness of distance and direction .
+* Need to explore haptic awareness.
 <!-- .element: style="margin-bottom:40px; font-size: 25px; color:white; font-family:Optima;" -->
 
 
@@ -272,7 +291,7 @@ Meta Llama 3, Phi 3, Mistral, Gemma 2, and so on.
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
 * Cooperative Learning has proven effective in enhancing learner engagement and
-improving knowledge retention in online courses.
+improving knowledge retention.
 <!-- .element: style="margin-bottom:50px; font-size: 30px; color:white; font-family:Optima;" -->
 
   * Enhances students' critical thinking skills and problem-solving abilities.
@@ -290,28 +309,30 @@ improving knowledge retention in online courses.
 <!-- .element: style="margin-bottom:50px; font-size: 45px; color:white; font-family: Comic Sans MS;" -->
 
 * **Group Coordination**: A intelligent chatbot could apply Cooperative Learning
-pedagogical principles to coordinate group formation and work.
+strategies (Circle of Writer, Jigsaw, Round Robin, etc.) to
+coordinate the group work.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 * **Progress Monitoring**: A intelligent chatbot can monitor progress and
-provide personalized feedback and guidance.
+provide guidance and feedback.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* **Facilitating Learning**: A intelligent chatbot can play the role of a student
-in a group, facilitating group formation and process.
+* **Facilitating Learning**: In extreme cases a intelligent chatbot can also
+play the role of a student in a group, facilitating group formation and process.
 <!-- .element: style="margin-bottom:70px; font-size: 30px; color:white; font-family:Optima;" -->
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
-## Main Research Question
+## Research Question
 <!-- .element: style="margin-bottom:120px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
-How do students' interactions with chatbots equipped with open generative models influence their learning and academic development?
+How do students' interactions with a intelligent chatbot influence their
+learning and academic development?
 <!-- .element: style="margin-bottom:70px; font-size: 35px; color:white; font-family:Optima;" -->
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
-## Research Questions
+## Derived questions
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
 * Are there measurable improvements in grades or content comprehension?
@@ -337,17 +358,14 @@ How do students' interactions with chatbots equipped with open generative models
 
 
 <!-- .slide: data-background="#495575" data-transition="convex" -->
-# Referências 📚
+# Thank you 📚
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:white; font-family: Comic Sans MS;" -->
 
-* Using Opentracing. Disponível em: [https://quarkus.io/guides/opentracing](https://quarkus.io/guides/opentracing)
-<!-- .element: style="margin-bottom:40px; font-size: 20px; color:white; font-family:Optima;" -->
+* https://rpmhub.dev
+<!-- .element: style="margin-bottom:40px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* Centralized Log Management. Disponível em: [https://quarkus.io/guides/centralized-log-management](https://quarkus.io/guides/centralized-log-management)
-<!-- .element: style="margin-bottom:40px; font-size: 20px; color:white; font-family:Optima;" -->
+* https://orion-services.dev
+<!-- .element: style="margin-bottom:40px; font-size: 30px; color:white; font-family:Optima;" -->
 
-* Jaeger. Disponível em: [https://www.jaegertracing.io](https://www.jaegertracing.io)
-<!-- .element: style="margin-bottom:40px; font-size: 20px; color:white; font-family:Optima;" -->
-
-* GrayLog. Disponível em: [https://www.graylog.org](https://www.graylog.org)
-<!-- .element: style="margin-bottom:40px; font-size: 20px; color:white; font-family:Optima;" -->
+* rodrigo.prestes@poa.ifrs.edu.br
+<!-- .element: style="margin-bottom:40px; font-size: 30px; color:white; font-family:Optima;" -->
