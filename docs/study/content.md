@@ -1,5 +1,5 @@
 <!-- .slide: data-background-opacity="0.2" data-background-image="img/title.jpg" data-transition="convex" -->
-# Study tips 2025
+# Study tips
 <!-- .element: style="margin-bottom:10px; font-size: 60px; color:white; font-family: Comic Sans MS;" -->
 
 UC3M - IFRS
@@ -23,12 +23,96 @@ Press 'F' to full screen
 
 <!-- .slide: data-background="#D6F3FF" data-transition="convex" -->
 ## Do not try to study everything at once
-<!-- .element: style="margin-bottom:100px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+<!-- .element: style="margin-bottom:30px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
 
-* Organize your study by distributing the topics throughout the weeks in a
-balanced way. A practical tip is to track your progress in the subjects through
+Tip One: the study plan
+<!-- .element: style="margin-bottom:30px; font-size: 35px; color:black; font-family:Optima;" -->
+
+* ⚠️ Trying to study everything at once can leave you feeling overwhelmed and make
+it difficult to explore each topic with the necessary depth and focus.
+<!-- .element: style="margin-bottom:50px; font-size: 25px; color:black; font-family:Optima;" -->
+
+* ✏️ Structure your studies by **spacing** the topics evenly over the
+weeks. In other words, develop a well-balanced study plan that includes
+dedicated study sessions each week.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:black; font-family:Optima;" -->
+
+    * 💡 A practical tip is to track your progress in the subjects through
 weekly exercises, allowing for continuous and consistent learning.
-<!-- .element: style="margin-bottom:75px; font-size: 25px; color:black; font-family:Optima;" -->
+<!-- .element: style="margin-bottom:50px; font-size: 25px; color:black; font-family:Optima;" -->
+
+    * 🤖 You can leverage Artificial Intelligence (AI) to create a personalized
+study plan tailored to your needs. Simply provide your topics, available days
+and hours, preferred breaks, and AI can generate a customized study schedule
+for you — even exporting a file to your calendar. Give it a try!
+<!-- .element: style="margin-bottom:50px; font-size: 25px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#D6F3FF" data-transition="convex" -->
+## Do not try to study everything at once
+<!-- .element: style="margin-bottom:30px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+Tip One: the study plan
+<!-- .element: style="margin-bottom:30px; font-size: 35px; color:black; font-family:Optima;" -->
+
+* ⚠️ Create a study plan is a good start point, but it is essential to monitor
+and evaluate your progress weekly.
+<!-- .element: style="margin-bottom:50px; font-size: 25px; color:black; font-family:Optima;" -->
+
+* Examples of questions to ask yourself about a homework, can be:
+<!-- .element: style="margin-bottom:50px; font-size: 25px; color:black; font-family:Optima;" -->
+
+| **Aspect**    | **Questions** (Gurung, Dunlosky, 2023)                       |
+|---------------|--------------------------------------------------------------|
+| **Plan**      | What is the instructor’s goal in having me do this task?
+| **Monitor**   | What strategies am I using that are working well or not working well to help me learn?
+| **Evaluating**| To what extent did I successfully accomplish the goals of the task?
+<!-- .element: style="margin-bottom:50px; font-size: 55px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#D6F3FF" data-transition="convex" -->
+## Do not try to study everything at once
+<!-- .element: style="margin-bottom:30px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+Tip Two: Attention to procrastination
+<!-- .element: style="margin-bottom:50px; font-size: 35px; color:black; font-family:Optima;" -->
+
+* In today’s world, with endless entertainment options, procrastination can be
+incredibly tempting. That’s why it’s vital to remain aware of your
+procrastination level and stay committed to your study plan.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* If you know you tend to procrastinate, be extra mindful and proactive!
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#D6F3FF" data-transition="convex" -->
+## Do not try to study everything at once
+<!-- .element: style="margin-bottom:30px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+Tip Two: Attention to procrastination
+<!-- .element: style="margin-bottom:30px; font-size: 35px; color:black; font-family:Optima;" -->
+
+* Some procrastination signs (Gurung, Dunlosky, 2023):
+<!-- .element: style="margin-bottom:30px; font-size: 30px; color:black; font-family:Optima;" -->
+
+  * 💭 I am continually saying, “I’ll do it tomorrow.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:black; font-family:Optima;" -->
+
+  * 💭 I do not do assignments until just before they are to be handed in.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:black; font-family:Optima;" -->
+
+  * 💭 I generally return phone calls/messages promptly.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:black; font-family:Optima;" -->
+
+  * 💭 I generally delay before starting on work I have to do.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:black; font-family:Optima;" -->
+
+  * 💭 I usually have to rush to complete a task on time.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:black; font-family:Optima;" -->
+
+  * 💭 I usually buy even an essential item at the last minute.
+<!-- .element: style="margin-bottom:30px; font-size: 25px; color:black; font-family:Optima;" -->
 
 
 <!-- .slide: data-background="#D6F3FF" data-transition="convex" -->
@@ -175,11 +259,11 @@ frustration or motivation?
 # References 📚
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:black; font-family: Comic Sans MS;" -->
 
-* Sumeracki, M., Nebel, C., Kuepper-Tetzel, C., & Need Kaminske, A. (2023). Ace
-That Test: A Student’s Guide to Learning Better. Routledge. ISBN: 978-1032355856.
-<!-- .element: style="margin-bottom:40px; font-size: 30px; color:black; font-family:Optima;" -->
-
 * Gurung, R. A. R., & Dunlosky, J. (2023). Study Like a Champ: The
 Psychology-Based Guide to “Grade A” Study Habits. APA LifeTools.
 ISBN: 978-1433840173.
+<!-- .element: style="margin-bottom:40px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Sumeracki, M., Nebel, C., Kuepper-Tetzel, C., & Need Kaminske, A. (2023). Ace
+That Test: A Student’s Guide to Learning Better. Routledge. ISBN: 978-1032355856.
 <!-- .element: style="margin-bottom:40px; font-size: 30px; color:black; font-family:Optima;" -->
