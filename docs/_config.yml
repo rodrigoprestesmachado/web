@@ -5,16 +5,16 @@ logo: "/images/logo.png"
 favicon_ico: "/images/favicon.png"
 
 aux_links:
+  "Github":
+    - "https://github.com/rodrigoprestesmachado"
   "Lattes":
     - "http://lattes.cnpq.br/9833435909646555"
   "Linkedin":
     - "http://linkedin.com/in/rodrigoprestesmachado"
-  "Github":
-    - "https://github.com/rodrigoprestesmachado"
 
 # Google Analytics
 ga_tracking:  G-R5MTNW4LKS
 ga_tracking_anonymize_ip: true
 
 # Footer content appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2024 <a href='https://rpmhub.dev'>RPM Hub</a>."
+footer_content: "Copyright &copy; 2025 <a href='https://rpmhub.dev'>RPM Hub</a>."

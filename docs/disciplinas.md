@@ -15,7 +15,7 @@ Education, Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
 ### Web Page Construction II
 
 **Technologies:** JavaScript, DOM (Document Object Model), Ajax (Asynchronous
-JavaScript and XML), PHP (Hypertext Preprocessor), etc.
+JavaScript and XML), Promise, Vue, etc.
 {: .fs-3 }
 
 * [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5778)
@@ -25,8 +25,8 @@ JavaScript and XML), PHP (Hypertext Preprocessor), etc.
 
 ### Web Programming II
 
-**Technologies:** JEE (Java Enterprise Edition), Microprofile, JPA (Java
-Persistence API), Web Services (SOAP and Rest), Web Sockets, etc.
+**Technologies:** Microprofile, JPA (Java Persistence API), Web Services (XML
+and Rest), Web Sockets, etc.
 {: .fs-3 }
 
 * [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5779)

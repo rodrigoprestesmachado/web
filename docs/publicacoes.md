@@ -10,7 +10,7 @@ Below are listed some publications in journals, conferences, and books that have
 been produced.
 {: .fs-3 }
 
-## Articles
+## Papers
 
 * [Orcid](http://orcid.org/0000-0003-0428-6387)
 {: .fs-3 }
@@ -31,7 +31,7 @@ de Castro (eds.). Software Development III: Object-Oriented JAVA Web Systems
 Programming. Porto Alegre: Bookman, 2016. 209 p. (Tekne). ISBN 9788582603703.
 {: .fs-3 }
 
-### PHD
+### PhD
 
 Sound Awareness: Discussing the Limits and Possibilities of Interaction and
 Positive Interdependence of People with Visual Impairments in Synchronous Web
@@ -45,7 +45,7 @@ Accessed on: Feb 1, 2021.
 A Location-Dependent Interest Matchmaking Service - Chapters available at: [1](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_pretextual.pdf), [2](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_01.pdf), [3](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_02.pdf), [4](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_03.pdf), [5](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_04.pdf), [6](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_cap_05.pdf), [7](http://www2.dbd.puc-rio.br/pergamum/tesesabertas/0310867_05_postextual.pdf)
 {: .fs-3 }
 
-## Videos
+## Some Videos
 
 * [YouTube](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)
 {: .fs-3 }
