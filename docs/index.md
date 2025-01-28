@@ -12,7 +12,7 @@ University of Pelotas (UCPel, 2001), a master’s degree in Informatics from the
 Pontifical Catholic University of Rio de Janeiro (PUC-Rio, 2005), a PhD in
 Informatics in Education from the Federal University of Rio Grande do Sul
 (UFRGS, 2019). Since 2010, he has been a professor at the Federal Institute of
-Education, Science, and Technology (IFRS) in Porto Alegre, Brazil. In 2025, he
+Education, Science, and Technology (IFRS) in Porto Alegre, Brazil. In 2024, he
 began aiding as a professor Honorius at Carlos III University of Madrid (UC3M).
 Rodrigo is interested in developing innovative systems and integrating computers
 into the educational landscape, exploring how technology can enhance learning
