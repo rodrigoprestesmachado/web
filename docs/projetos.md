@@ -11,6 +11,21 @@ within the context of the Professional Master's in Informatics in Education at
 IFRS in Porto Alegre.
 {: .fs-3 }
 
+## SabIA
+
+The investigation explores how students employ metacognitive strategies while
+using GenAI applications to learn programming.
+{: .fs-3 }
+
+Some study strategies: [https://rpmhub.dev/study](https://rpmhub.dev/study)
+{: .fs-3 }
+
+<center>
+	<a href="https://rpmhub.dev/study">
+		<img src="/images/sabia.webp" alt="Orion Services" width="40%">
+	</a>
+</center>
+
 ## Orion Services
 
 [![Static Badge](https://img.shields.io/badge/Discord%20-%20Orion%20Services%20-%20%23FBB302)](https://discord.gg/XkZQw3hbDn)
