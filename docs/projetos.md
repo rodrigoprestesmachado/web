@@ -22,7 +22,7 @@ Some study strategies: [https://rpmhub.dev/study](https://rpmhub.dev/study)
 
 <center>
 	<a href="https://rpmhub.dev/study">
-		<img src="/images/sabia.webp" alt="Orion Services" width="40%">
+		<img src="/images/sabia.webp" alt="SabIA" width="25%">
 	</a>
 </center>
 
