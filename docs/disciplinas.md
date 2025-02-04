@@ -6,8 +6,7 @@ nav_order: 3
 
 # Courses at IFRS
 
-This page lists some of the courses being offered at the Federal Institute of
-Education, Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
+This page lists some courses offered at the Federal Institute of Education Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
 {: .fs-3 }
 
 ## Technologist in Internet Systems

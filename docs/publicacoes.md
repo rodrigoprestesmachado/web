@@ -6,8 +6,7 @@ nav_order: 5
 
 # Publications
 
-Below are listed some publications in journals, conferences, and books that have
-been produced.
+Below is a curated selection of impactful publications showcasing contributions to conferences, journals, and books.
 {: .fs-3 }
 
 ## Papers
