@@ -1,11 +1,11 @@
 <!-- .slide: data-background-opacity="0.2" data-background-image="img/title.jpg" data-transition="convex" -->
-# Study Strategies.
+# Study Strategies
 <!-- .element: style="margin-bottom:10px; font-size: 60px; color:white; font-family: Comic Sans MS;" -->
 
-UC3M - Rodrigo Prestes Machado
+Rodrigo Prestes Machado
 <!-- .element: style="margin-bottom:10px; font-size: 30px; color:white; font-family:Optima;" -->
 
-https://rpmhub.dev/study
+rodrigo.prestes@uc3m.es
 <!-- .element: style="margin-bottom:100px; font-size: 30px; color:black; font-family:Optima;" -->
 
 Press 'F' to full screen
@@ -128,6 +128,51 @@ need help from a colleague or a professor?
 
 * What lessons learned this week can be adapted and applied in the upcoming weeks?
 <!-- .element: style="margin-bottom:75px; font-size: 35px; color:black; font-family:Optima;" -->
+
+
+
+<!-- .slide: data-background="#DDFDAF" data-transition="convex" -->
+## Study efficiently
+<!-- .element: style="margin-bottom:20px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+
+<!-- .slide: data-background="#DDFDAF" data-transition="convex" -->
+## Study efficiently
+<!-- .element: style="margin-bottom:80px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+* Structure your study sessions by alternating periods of **intense focus** with **breaks**.
+During focus periods, it is essential to avoid distractions such as social media,
+replying to messages, or even listening to music; save these activities for the
+breaks.
+<!-- .element: style="margin-bottom:75px; font-size: 25px; color:black; font-family:Optima;" -->
+
+* An effective technique is the **Pomodoro method**: focus intensely for 25
+minutes, then take a 5-minute break. If 25 minutes feels too challenging, begin
+with 15 minutes of focus followed by 5 minutes of rest.
+<!-- .element: style="margin-bottom:75px; font-size: 25px; color:black; font-family:Optima;" -->
+
+* Whenever possible, change the study topics during your focus periods. For
+example, if you finished reviewing Object Orientation, try switching to Java
+Control of Errors for the next focus block. This variation engages your brain,
+facilitates problem recognition, and reinforces learning.
+<!-- .element: style="margin-bottom:75px; font-size: 25px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#DDFDAF" data-transition="convex" -->
+## Questions for reflection
+<!-- .element: style="margin-bottom:80px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+* Are you managing your focus and rest periods effectively?
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* What strategies can help you minimize distractions during focus time?
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Is there a particular sequence or pattern that works best for you? For
+example, can we study one concept in a focused block and then practice it in
+another?
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
 
 
 <!-- .slide: data-background="#FAFAFA" data-transition="convex" -->
