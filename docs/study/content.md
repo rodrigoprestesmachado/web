@@ -4,8 +4,7 @@
 
 Rodrigo Prestes Machado
 <!-- .element: style="margin-bottom:10px; font-size: 30px; color:white; font-family:Optima;" -->
-
-rodrigo.prestes@uc3m.es
+rprestes@it.uc3m.es
 <!-- .element: style="margin-bottom:100px; font-size: 30px; color:black; font-family:Optima;" -->
 
 Press 'F' to full screen
