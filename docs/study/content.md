@@ -175,6 +175,130 @@ another?
 
 
 
+<!-- .slide: data-background="#FEFDB3" data-transition="convex" -->
+## Use GenAI Smartly
+<!-- .element: style="margin-bottom:20px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+
+<!-- .slide: data-background="#FEFDB3" data-transition="convex" -->
+## Use GenAI Smartly
+<!-- .element: style="margin-bottom:80px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+* **Avoid** requesting a **complete solution** directly from the GenAI. While
+you may receive a quick response, you will miss the chance to gain a deep
+understanding of the problem.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* **Break** down **large problems** into **smaller parts**. Ask the AI to
+segment a complex problem into smaller steps. This will allow you to analyze and
+resolve individual aspects before arriving at the final solution.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Before requesting an algorithm, **ask** for a **conceptual explanation**. This
+will help you understand the logic behind the solution before proceeding with
+the implementation.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#FEFDB3" data-transition="convex" -->
+## Use GenAI Smartly
+<!-- .element: style="margin-bottom:80px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+* Request **explanations** for specific lines of **code** that you find unclear. For
+example: _"Explain what this line does: for (int i = 0; i < arr.length; i++)"._
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Use **analogies** and real-world examples. Ask questions like, _"How does the
+concept of encapsulation apply to everyday situations?"_ This can help you
+understand.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Request **summaries** and **exercises** on the concepts you are studying.
+First, ask for a summary. Then, request exercises to test your comprehension and
+reinforce your learning.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#FEFDB3" data-transition="convex" -->
+## Use GenAI Smartly
+<!-- .element: style="margin-bottom:80px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+* Ask for **suggestions** to **improve your code**. This will allow you to explore
+different approaches and refine your solution with new ideas.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* When encountering an **error**, try to **understand it**. Ask the GenAI for
+explanations about the error message. For example: _"What does
+NullPointerException mean, and how can I avoid it?"._
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Explore the application of **concepts in different problems**. After learning
+something new, ask: _"What other problems can be solved using this concept?"_
+This will help you transfer knowledge to various contexts.
+<!-- .element: style="margin-bottom:60px; font-size: 30px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#FEFDB3" data-transition="convex" -->
+## Use GenAI Smartly
+<!-- .element: style="margin-bottom:80px; font-size: 35px; color:black; font-family: Comic Sans MS;" -->
+
+* Practice adapting code to **new scenarios**. If you have learned how to sort a
+list of numbers, try applying the same logic to sorting class objects, asking
+for help only with necessary adjustments.
+<!-- .element: style="margin-bottom:100px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* **Rewrite** solutions without looking at the AI-generated response. This will
+reinforce your learning and help consolidate key concepts.
+<!-- .element: style="margin-bottom:80px; font-size: 30px; color:black; font-family:Optima;" -->
+
+
+
+<!-- .slide: data-background="#FEECE5" data-transition="convex" -->
+## Monitor your Feelings
+<!-- .element: style="margin-bottom:30px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+
+<!-- .slide: data-background="#FEECE5" data-transition="convex" -->
+## Monitor your Feelings
+<!-- .element: style="margin-bottom:50px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+* When we solve small problems, it makes us feel confident and motivated to
+continue.
+<!-- .element: style="margin-bottom:50px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* However, when we study, it is normal to encounter difficulties, which can
+generate negative feelings such as frustration or lack of motivation.
+<!-- .element: style="margin-bottom:50px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Therefore, the negative feelings generated during the study must be constantly monitored.
+<!-- .element: style="margin-bottom:50px; font-size: 30px; color:black; font-family:Optima;" -->
+
+* Always ask for help if you notice that the difficulties in the subject are
+generating negative feelings to the point that you cannot deal with them alone.
+<!-- .element: style="margin-bottom:50px; font-size: 30px; color:black; font-family:Optima;" -->
+
+
+<!-- .slide: data-background="#FEECE5" data-transition="convex" -->
+## Questions for reflection
+<!-- .element: style="margin-bottom:80px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+* How often do you take a step back to reflect on your emotions during study
+sessions? What can you do to regularly monitor and adjust your emotional state
+while learning?
+<!-- .element: style="margin-bottom:75px; font-size: 25px; color:black; font-family:Optima;" -->
+
+* What are some positive actions you can take when you feel stuck or frustrated
+during your studies? Could a short break, a change of perspective, or talking to
+someone make a difference?
+<!-- .element: style="margin-bottom:75px; font-size: 25px; color:black; font-family:Optima;" -->
+
+* Can you recall a time when asking for help made a big difference in how you
+felt about a difficult subject? How did getting support affect your feelings of
+frustration or motivation?
+<!-- .element: style="margin-bottom:75px; font-size: 25px; color:black; font-family:Optima;" -->
+
+
+
 <!-- .slide: data-background="#FAFAFA" data-transition="convex" -->
 # References 📚
 <!-- .element: style="margin-bottom:50px; font-size: 40px; color:black; font-family: Comic Sans MS;" -->
