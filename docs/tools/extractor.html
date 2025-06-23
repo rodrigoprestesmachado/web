@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Content Extractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .text-justify {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <div class="gradient-bg text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
+                Web Content Extractor
+            </h1>
+            <p class="text-xl max-w-3xl mx-auto">
+                Transforme qualquer página web em um arquivo de texto limpo e organizado
+            </p>
+        </div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+            <div class="p-6 sm:p-8">
+                <div class="flex items-center mb-6">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-link text-blue-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Extrair Conteúdo</h2>
+                </div>
+                
+                <div class="mb-8">
+                    <label for="url-input" class="block text-sm font-medium text-gray-700 mb-2">
+                        Cole o URL da página que deseja extrair
+                    </label>
+                    <div class="flex">
+                        <input 
+                            type="url" 
+                            id="url-input" 
+                            placeholder="https://exemplo.com" 
+                            class="flex-1 min-w-0 block w-full px-4 py-3 rounded-l-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            required
+                        >
+                        <button 
+                            id="extract-btn" 
+                            class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-r-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                        >
+                            <i class="fas fa-download mr-2"></i> Extrair
+                        </button>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">
+                        Suporte para páginas HTML padrão. Alguns sites podem ter restrições.
+                    </p>
+                </div>
+
+                <div id="loading-section" class="hidden mb-8">
+                    <div class="flex items-center justify-center py-8">
+                        <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mr-4"></div>
+                        <div>
+                            <h3 class="text-lg font-medium text-gray-800">Processando conteúdo...</h3>
+                            <p class="text-sm text-gray-600" id="status-text">Conectando ao site</p>
+                        </div>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+
+                <div id="result-section" class="hidden mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Extração concluída!</h3>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-sm font-medium text-gray-700">Estatísticas:</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div class="bg-white p-3 rounded-lg shadow">
+                                <div class="text-2xl font-bold text-blue-600" id="char-count">0</div>
+                                <div class="text-xs text-gray-500">CARACTERES</div>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg shadow">
+                                <div class="text-2xl font-bold text-blue-600" id="word-count">0</div>
+                                <div class="text-xs text-gray-500">PALAVRAS</div>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg shadow">
+                                <div class="text-2xl font-bold text-blue-600" id="link-count">0</div>
+                                <div class="text-xs text-gray-500">LINKS</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button 
+                        id="download-btn" 
+                        class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors"
+                    >
+                        <i class="fas fa-file-download mr-2"></i> Baixar Arquivo de Texto
+                    </button>
+                </div>
+
+                <div id="error-section" class="hidden mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-exclamation-circle text-red-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Ocorreu um erro</h3>
+                    </div>
+                    <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-4">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-exclamation-circle text-red-500"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm text-red-700" id="error-message"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button 
+                        id="retry-btn" 
+                        class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                    >
+                        <i class="fas fa-redo mr-2"></i> Tentar Novamente
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-bolt text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Rápido e Eficiente</h3>
+                <p class="text-gray-600 text-justify">
+                    Nosso sistema processa páginas web em segundos, extraindo apenas o conteúdo relevante e removendo anúncios e elementos desnecessários.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-shield-alt text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Privacidade Garantida</h3>
+                <p class="text-gray-600 text-justify">
+                    Todo o processamento ocorre no seu navegador. Nós não armazenamos ou acessamos os dados que você extrai.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md card-hover">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-cog text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Formatado Automaticamente</h3>
+                <p class="text-gray-600 text-justify">
+                    O texto é limpo e organizado, com parágrafos identificados e formatação consistente para melhor legibilidade.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">Web Content Extractor</h2>
+                    <p class="text-gray-400">Transforme páginas web em texto puro</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+                <p>© 2023 Web Content Extractor. Todos os direitos reservados.</p>
+                <p class="mt-2">Este é um projeto de demonstração. Alguns sites podem bloquear requisições de CORS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlInput = document.getElementById('url-input');
+            const extractBtn = document.getElementById('extract-btn');
+            const loadingSection = document.getElementById('loading-section');
+            const resultSection = document.getElementById('result-section');
+            const errorSection = document.getElementById('error-section');
+            const downloadBtn = document.getElementById('download-btn');
+            const retryBtn = document.getElementById('retry-btn');
+            const progressBar = document.getElementById('progress-bar');
+            const statusText = document.getElementById('status-text');
+            const charCount = document.getElementById('char-count');
+            const wordCount = document.getElementById('word-count');
+            const linkCount = document.getElementById('link-count');
+            const errorMessage = document.getElementById('error-message');
+
+            let extractedContent = '';
+            
+            // Simulate progress for demo purposes
+            function simulateProgress() {
+                let progress = 0;
+                const steps = [
+                    {text: "Conectando ao site...", increment: 10},
+                    {text: "Baixando conteúdo...", increment: 30},
+                    {text: "Processando HTML...", increment: 20},
+                    {text: "Removendo elementos desnecessários...", increment: 20},
+                    {text: "Formatando texto...", increment: 20}
+                ];
+                
+                steps.forEach((step, index) => {
+                    setTimeout(() => {
+                        progress += step.increment;
+                        progressBar.style.width = `${progress}%`;
+                        statusText.textContent = step.text;
+                        
+                        if (index === steps.length - 1) {
+                            setTimeout(showResult, 800);
+                        }
+                    }, 1000 * (index + 1));
+                });
+            }
+            
+            function showResult() {
+                loadingSection.classList.add('hidden');
+                resultSection.classList.remove('hidden');
+                
+                // Calculate statistics
+                const chars = extractedContent.length;
+                const words = extractedContent.split(/\s+/).filter(word => word.length > 0).length;
+                const links = (extractedContent.match(/https?:\/\/[^\s]+/g) || []).length;
+                
+                charCount.textContent = chars.toLocaleString();
+                wordCount.textContent = words.toLocaleString();
+                linkCount.textContent = links.toLocaleString();
+            }
+            
+            function showError(message) {
+                loadingSection.classList.add('hidden');
+                errorSection.classList.remove('hidden');
+                errorMessage.textContent = message;
+            }
+            
+            function downloadTextFile() {
+                const blob = new Blob([extractedContent], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'conteudo-extraido.txt';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }
+            
+            // Main extraction function
+            async function extractContent() {
+                const url = urlInput.value.trim();
+                
+                if (!url) {
+                    showError('Por favor, insira um URL válido.');
+                    return;
+                }
+                
+                try {
+                    // Show loading state
+                    extractBtn.disabled = true;
+                    loadingSection.classList.remove('hidden');
+                    resultSection.classList.add('hidden');
+                    errorSection.classList.add('hidden');
+                    
+                    // Reset progress bar
+                    progressBar.style.width = '0%';
+                    
+                    // Start progress simulation
+                    simulateProgress();
+                    
+                    // In a real implementation, you would use a CORS proxy or backend service
+                    // For demo purposes, we'll simulate the extraction
+                    await new Promise(resolve => setTimeout(resolve, 6000));
+                    
+                    // Simulated extracted content
+                    extractedContent = `Conteúdo extraído de: ${url}\n\n`;
+                    extractedContent += `Este é um exemplo de conteúdo que seria extraído da página web. Em uma implementação real, o conteúdo real da página seria baixado e processado aqui.\n\n`;
+                    extractedContent += `O sistema removeria elementos como menus, rodapés, anúncios e manteria apenas o conteúdo principal do artigo ou página.\n\n`;
+                    extractedContent += `Links encontrados:\n- https://exemplo.com/link1\n- https://exemplo.com/link2\n\n`;
+                    extractedContent += `O texto seria formatado com parágrafos claros e estrutura lógica para facilitar a leitura.`;
+                    
+                } catch (error) {
+                    console.error('Erro na extração:', error);
+                    showError('Não foi possível acessar este site. Alguns sites bloqueiam requisições de CORS. Tente um site diferente ou use uma extensão de navegador para contornar essa limitação.');
+                } finally {
+                    extractBtn.disabled = false;
+                }
+            }
+            
+            // Event listeners
+            extractBtn.addEventListener('click', extractContent);
+            downloadBtn.addEventListener('click', downloadTextFile);
+            retryBtn.addEventListener('click', () => {
+                errorSection.classList.add('hidden');
+                extractContent();
+            });
+            
+            // Allow pressing Enter in the input field
+            urlInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    extractContent();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
