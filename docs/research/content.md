@@ -194,12 +194,6 @@ Press 'F' to full screen
 <!-- .slide: data-background="#FFFF" data-transition="convex" -->
 <!-- .element: style="margin-bottom:20px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
 
-<img src="img/iplacex1.png" width="850px" style="margin-bottom:20px;">
-
-
-<!-- .slide: data-background="#FFFF" data-transition="convex" -->
-<!-- .element: style="margin-bottom:20px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
-
 <img src="img/iplacex2.png" width="850px" style="margin-bottom:20px;">
 
 
@@ -239,11 +233,31 @@ Press 'F' to full screen
 
 
 <!-- .slide: data-background="#273050" data-transition="convex" -->
-# Future Investigations
+# Next Investigations
 <!-- .element: style="margin-bottom:50px; font-size: 32px; color:white; font-family: Comic Sans MS;" -->
 
-* Modify student's task to add metacognitive instructions to guide in the use of GenAI.
-<!-- .element: style="margin-bottom:30px; font-size: 28px; color:white; font-family:Optima;" -->
+* Modify student tasks to include metacognitive prompt ideas that support
+  planning, monitoring, and evaluation.
+<!-- .element: style="margin-bottom:80px; font-size: 28px; color:white; font-family:Optima;" -->
 
-* Evaluate the usage patterns, metacognitive experience (emotions) and academic performance.
-<!-- .element: style="margin-bottom:30px; font-size: 28px; color:white; font-family:Optima;" -->
+* Evaluate the task modifications to determine their impact on:
+<!-- .element: style="margin-bottom:20px; font-size: 28px; color:white; font-family:Optima;" -->
+ * Usage patterns,
+<!-- .element: style="margin-bottom:20px; font-size: 28px; color:white; font-family:Optima;" -->
+ * Metacognitive experiences (emotions),
+<!-- .element: style="margin-bottom:20px; font-size: 28px; color:white; font-family:Optima;" -->
+ * Academic performance.
+<!-- .element: style="margin-bottom:20px; font-size: 28px; color:white; font-family:Optima;" -->
+
+
+
+<!-- .slide: data-background="#64C780" data-transition="convex" -->
+# Thank you!
+<!-- .element: style="margin-bottom:90px; font-size: 38px; color:black; font-family: Comic Sans MS;" -->
+
+<a href="mailto:rprestes@it.uc3m.es" style="color:black; font-size: 30px; font-family:Optima; margin-bottom:5px; display:inline-block;">rprestes@it.uc3m.es</a>
+
+<a href="mailto:rodrigo.prestes@poa.ifrs.edu.br
+" style="color:black; font-size: 30px; font-family:Optima; margin-bottom:5px; display:inline-block;">rodrigo.prestes@poa.ifrs.edu.br</a>
+
+<a href="https://rpmhub.dev" style="color:black; font-size: 5px; font-family:Optima; margin-bottom:10px; display:inline-block;">https://rpmhub.dev</a>
