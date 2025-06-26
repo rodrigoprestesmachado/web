@@ -260,4 +260,4 @@ Press 'F' to full screen
 <a href="mailto:rodrigo.prestes@poa.ifrs.edu.br
 " style="color:black; font-size: 30px; font-family:Optima; margin-bottom:5px; display:inline-block;">rodrigo.prestes@poa.ifrs.edu.br</a>
 
-<a href="https://rpmhub.dev" style="color:black; font-size: 5px; font-family:Optima; margin-bottom:10px; display:inline-block;">https://rpmhub.dev</a>
+<a href="https://rpmhub.dev" style="color:black; font-size: 30px; font-family:Optima; margin-bottom:10px; display:inline-block;">https://rpmhub.dev</a>
