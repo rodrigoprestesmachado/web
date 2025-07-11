@@ -5,12 +5,12 @@ logo: "/images/logo.png"
 favicon_ico: "/images/favicon.png"
 
 aux_links:
-  "Github":
-    - "https://github.com/rodrigoprestesmachado"
   "Lattes":
     - "http://lattes.cnpq.br/9833435909646555"
   "Linkedin":
     - "http://linkedin.com/in/rodrigoprestesmachado"
+  "Github":
+    - "https://github.com/rodrigoprestesmachado"
 
 # Google Analytics
 ga_tracking:  G-R5MTNW4LKS
