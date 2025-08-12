@@ -6,7 +6,8 @@ nav_order: 3
 
 # Courses at IFRS
 
-This page lists some courses offered at the Federal Institute of Education Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
+This page lists some courses offered at the Federal Institute of Education
+Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
 {: .fs-3 }
 
 ## Technologist in Internet Systems
@@ -28,8 +29,6 @@ JavaScript and XML), Promise, Vue, etc.
 and Rest), Web Sockets, etc.
 {: .fs-3 }
 
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5779)
-{: .fs-3 }
 * [Web](https://pw2.rpmhub.dev)
 {: .fs-3 }
 
@@ -38,8 +37,6 @@ and Rest), Web Sockets, etc.
 **Technologies:** JUnit, Selenium IDE, PMD, Docker, Maven, etc.
 {: .fs-3 }
 
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5780)
-{: .fs-3 }
 * [Web](https://vvs.rpmhub.dev)
 {: .fs-3 }
 
@@ -50,7 +47,4 @@ and Rest), Web Sockets, etc.
 **Contents:** Understanding different types of disabilities, knowledge of
 assistive technologies, internet accessibility, accessible digital learning
 objects, and inclusive pedagogical practices and actions.
-{: .fs-3 }
-
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=4138")
 {: .fs-3 }
