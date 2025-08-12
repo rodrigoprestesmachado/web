@@ -18,8 +18,6 @@ Science, and Technology of Rio Grande do Sul (IFRS) in Porto Alegre.
 JavaScript and XML), Promise, Vue, etc.
 {: .fs-3 }
 
-* [Moodle](https://moodle.poa.ifrs.edu.br/course/view.php?id=5778)
-{: .fs-3 }
 * [Web](https://cpw2.rpmhub.dev)
 {: .fs-3 }
 
