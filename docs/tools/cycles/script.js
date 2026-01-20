@@ -416,30 +416,37 @@ function getFormData() {
 
 // Format analysis text with markdown-like styling
 function formatAnalysisText(text) {
-    // Convert markdown-like formatting to HTML
-    let formatted = text
-        // Headers
-        .replace(/^### (.*$)/gm, '<h3 class="text-lg font-semibold text-gray-800 mt-6 mb-2">$1</h3>')
-        .replace(/^## (.*$)/gm, '<h2 class="text-xl font-bold text-gray-800 mt-6 mb-3">$1</h2>')
-        .replace(/^# (.*$)/gm, '<h1 class="text-2xl font-bold text-purple-700 mt-4 mb-4">$1</h1>')
-        // Bold
-        .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-gray-900">$1</strong>')
-        // Italic
-        .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
-        // Lists
-        .replace(/^- (.*$)/gm, '<li class="ml-4 text-gray-700">$1</li>')
-        .replace(/^(\d+)\. (.*$)/gm, '<li class="ml-4 text-gray-700"><span class="font-medium">$1.</span> $2</li>')
-        // Line breaks
-        .replace(/\n\n/g, '</p><p class="mb-4 text-gray-700 leading-relaxed">')
-        .replace(/\n/g, '<br>');
+    // Configure marked for better rendering
+    if (typeof marked !== 'undefined') {
+        marked.setOptions({
+            breaks: true,
+            gfm: true,
+            headerIds: false,
+            mangle: false
+        });
+        
+        // Use marked to convert markdown to HTML
+        const html = marked.parse(text);
+        
+        // Add Tailwind CSS classes to the generated HTML
+        return html
+            .replace(/<h1>/g, '<h1 class="text-2xl font-bold text-purple-700 mt-6 mb-4">')
+            .replace(/<h2>/g, '<h2 class="text-xl font-bold text-gray-800 mt-6 mb-3">')
+            .replace(/<h3>/g, '<h3 class="text-lg font-semibold text-gray-800 mt-5 mb-2">')
+            .replace(/<h4>/g, '<h4 class="text-base font-semibold text-gray-700 mt-4 mb-2">')
+            .replace(/<p>/g, '<p class="mb-4 text-gray-700 leading-relaxed">')
+            .replace(/<ul>/g, '<ul class="list-disc ml-6 mb-4 space-y-2">')
+            .replace(/<ol>/g, '<ol class="list-decimal ml-6 mb-4 space-y-2">')
+            .replace(/<li>/g, '<li class="text-gray-700">')
+            .replace(/<strong>/g, '<strong class="font-semibold text-gray-900">')
+            .replace(/<em>/g, '<em class="italic text-gray-800">')
+            .replace(/<code>/g, '<code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-indigo-600">')
+            .replace(/<pre>/g, '<pre class="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4">')
+            .replace(/<blockquote>/g, '<blockquote class="border-l-4 border-indigo-500 pl-4 italic text-gray-700 my-4">');
+    }
     
-    // Wrap lists
-    formatted = formatted.replace(/(<li.*?<\/li>)+/g, '<ul class="list-disc mb-4 space-y-1">$&</ul>');
-    
-    // Wrap in paragraph
-    formatted = '<p class="mb-4 text-gray-700 leading-relaxed">' + formatted + '</p>';
-    
-    return formatted;
+    // Fallback if marked is not available
+    return '<div class="text-gray-700 whitespace-pre-wrap">' + text + '</div>';
 }
 
 // AI Analysis button handler
