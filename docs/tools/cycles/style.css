@@ -1,0 +1,226 @@
+/* Custom Styles for Mover Cycles */
+
+/* Custom font import */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --secondary: #06b6d4;
+    --accent: #f59e0b;
+    --success: #10b981;
+    --danger: #ef4444;
+    --bg-dark: #0f172a;
+    --bg-light: #f8fafc;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+}
+
+/* Form Inputs */
+input[type="number"],
+input[type="date"],
+input[type="text"] {
+    font-family: 'JetBrains Mono', monospace;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="text"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    outline: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Table styling */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background: #f8fafc;
+    z-index: 10;
+}
+
+/* Button hover effects */
+button {
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Card hover effect */
+section {
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in animation for results */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#resultsSection:not(.hidden) {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Row animations */
+#resultsBody tr {
+    animation: fadeInUp 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+#resultsBody tr:nth-child(1) { animation-delay: 0.05s; }
+#resultsBody tr:nth-child(2) { animation-delay: 0.1s; }
+#resultsBody tr:nth-child(3) { animation-delay: 0.15s; }
+#resultsBody tr:nth-child(4) { animation-delay: 0.2s; }
+#resultsBody tr:nth-child(5) { animation-delay: 0.25s; }
+#resultsBody tr:nth-child(6) { animation-delay: 0.3s; }
+#resultsBody tr:nth-child(7) { animation-delay: 0.35s; }
+#resultsBody tr:nth-child(8) { animation-delay: 0.4s; }
+#resultsBody tr:nth-child(9) { animation-delay: 0.45s; }
+#resultsBody tr:nth-child(10) { animation-delay: 0.5s; }
+#resultsBody tr:nth-child(11) { animation-delay: 0.55s; }
+#resultsBody tr:nth-child(12) { animation-delay: 0.6s; }
+#resultsBody tr:nth-child(13) { animation-delay: 0.65s; }
+#resultsBody tr:nth-child(14) { animation-delay: 0.7s; }
+#resultsBody tr:nth-child(15) { animation-delay: 0.75s; }
+#resultsBody tr:nth-child(16) { animation-delay: 0.8s; }
+
+/* Loading spinner */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Bounce animation for loading dots */
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+/* Pulse animation for analysis loading */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Analysis section styling */
+#analysisSection {
+    background: linear-gradient(135deg, #ffffff 0%, #faf5ff 100%);
+    border: 1px solid #e9d5ff;
+}
+
+#analysisText h1,
+#analysisText h2,
+#analysisText h3 {
+    border-bottom: 2px solid #e9d5ff;
+    padding-bottom: 0.5rem;
+}
+
+#analysisText ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+#analysisText li {
+    margin-bottom: 0.5rem;
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    table {
+        font-size: 0.875rem;
+    }
+    
+    th, td {
+        padding: 0.5rem !important;
+    }
+}

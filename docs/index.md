@@ -1,40 +1,35 @@
 ---
 layout: default
-title: home
+title: About
 nav_order: 1
 ---
 # Rodrigo Prestes Machado
 
-Possui graduação em Ciência da Computação pela Universidade Católica de Pelotas (UCPel - 2001), mestrado em Informática pela Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio - 2005) e doutorado em Informática na Educação pela Universidade Federal do Rio Grande do Sul (UFRGS - 2019). Desde 2010 atua como professor no Instituto Federal de Educação, Ciência e Tecnologia de Porto Alegre. Entre as suas principais áreas de interesse, destacam-se: desenvolvimento de sistemas e informática na educação.
+[![Static Badge](https://img.shields.io/badge/Discord%20-%20Rodrigo%20Prestes%20Machado%20-%20%237792C8)](https://discord.gg/C29cqvm)
+
+Rodrigo Prestes Machado holds a degree in Computer Science from the Catholic
+University of Pelotas (UCPel, 2001), a master’s degree in Informatics from the
+Pontifical Catholic University of Rio de Janeiro (PUC-Rio, 2005), and a PhD in
+Informatics in Education from the Federal University of Rio Grande do Sul
+(UFRGS, 2019). Since 2010, he has been a professor at the Federal Institute of
+Education, Science, and Technology (IFRS) in Porto Alegre, Brazil. In 2024, he
+also took on the position of honorary professor at the Carlos III University of
+Madrid (UC3M). Rodrigo is interested in developing innovative systems and
+integrating computers into educational environments, exploring how technology
+can enhance learning experiences and improve academic outcomes.
 {: .fs-3 }
 
-## Currículo
+## Contact
 
-* [lattes](http://lattes.cnpq.br/9833435909646555)
+* e-mail: rodrigo.prestes at poa.ifrs.edu.br
 {: .fs-3 }
 
-## Contato
+## Research Groups
 
-* e-mail: rodrigo.prestes@poa.ifrs.edu.br
+* [GTech.Edu](http://gtechedu.ufrgs.br), [NIEE](http://www.ufrgs.br/niee/),
+  [LAC](http://www.lac.inf.puc-rio.br)
 {: .fs-3 }
 
-* Servidor [Discord](https://discord.gg/C29cqvm)
-{: .fs-3 }
-## Redes sociais
-
-* [YouTube](https://www.youtube.com/channel/UCI7yp4BYeWwc7NJAKWGwGcg/)
-{: .fs-3 }
-
-* [Github](https://github.com/rodrigoprestesmachado)
-{: .fs-3 }
-
-* [Instagram](https://instagram.com/rodrigoprestesmachado?utm_medium=copy_link)
-{: .fs-3 }
-
-## Laboratórios de pesquisa
-
-* [NIEE](http://www.ufrgs.br/niee/)
-{: .fs-3 }
-
-* [LAC](http://www.lac.inf.puc-rio.br)
-{: .fs-3 }
+<center>
+	<img src="/images/mark.png" alt="Rodrigo Prestes Machado Logo" width="20%">
+</center>

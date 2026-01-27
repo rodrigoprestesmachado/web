@@ -1,3 +1,20 @@
 remote_theme: pmarsceill/just-the-docs
+
 logo: "/images/logo.png"
-color_scheme: dark
+
+favicon_ico: "/images/favicon.png"
+
+aux_links:
+  "Lattes":
+    - "http://lattes.cnpq.br/9833435909646555"
+  "Linkedin":
+    - "http://linkedin.com/in/rodrigoprestesmachado"
+  "Github":
+    - "https://github.com/rodrigoprestesmachado"
+
+# Google Analytics
+ga_tracking:  G-R5MTNW4LKS
+ga_tracking_anonymize_ip: true
+
+# Footer content appears at the bottom of every page's main content
+footer_content: "Copyright &copy; 2026 <a href='https://rpmhub.dev'>RPM Hub</a>."
