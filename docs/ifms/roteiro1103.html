@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forward Snowball | CSCL | MPIE</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:    #1a2b4a;
+    --navy2:   #1F3A5F;
+    --yellow:  #f5c03a;
+    --yellow2: #fff8e6;
+    --cream:   #f0ece3;
+    --white:   #ffffff;
+    --grey:    #d8d2c6;
+    --text:    #1a2b4a;
+    --muted:   #6b6355;
+  }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ── HERO ──────────────────────────────────────────────── */
+  .hero {
+    background: var(--navy);
+    padding: 52px 40px 48px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before { content:''; position:absolute; right:-80px; top:-80px; width:340px; height:340px; border-radius:50%; background:rgba(255,255,255,0.04); }
+  .hero::after  { content:''; position:absolute; right:60px; bottom:-70px; width:200px; height:200px; border-radius:50%; background:rgba(255,255,255,0.03); }
+
+  .hero-inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
+
+  .hero h1 { font-size: 52px; font-weight: 900; color: #fff; line-height: 1.1; margin-bottom: 16px; letter-spacing: -1px; }
+  .hero h1 span { color: var(--yellow); }
+  .hero-sub { font-size: 16px; color: rgba(255,255,255,0.68); max-width: 540px; margin-bottom: 32px; }
+
+  .hero-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+  .pill {
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 30px; padding: 7px 18px;
+    font-size: 13px; color: #fff;
+    display: flex; align-items: center; gap: 7px;
+  }
+
+  /* ── CONTENT ───────────────────────────────────────────── */
+  .content { max-width: 860px; margin: 0 auto; padding: 52px 24px 80px; }
+
+  .sec-title { font-size: 26px; font-weight: 800; color: var(--navy); text-align: center; margin-bottom: 40px; }
+
+  /* ── TIMELINE ──────────────────────────────────────────── */
+  .timeline { position: relative; }
+  .timeline::before {
+    content: ''; position: absolute; left: 31px; top: 0; bottom: 0;
+    width: 2px; background: var(--grey); z-index: 0;
+  }
+
+  .tl-item { display: flex; gap: 24px; margin-bottom: 24px; }
+
+  .tl-dot {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--yellow); color: var(--navy);
+    font-size: 22px; font-weight: 900;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; z-index: 1;
+    box-shadow: 0 4px 14px rgba(245,192,58,0.4);
+  }
+  .tl-dot.navy { background: var(--navy); color: var(--yellow); box-shadow: 0 4px 14px rgba(26,43,74,0.3); }
+  .tl-dot.green  { background: #1E8449; color: #fff; box-shadow: 0 4px 14px rgba(30,132,73,0.35); }
+  .tl-dot.orange { background: #CA6F1E; color: #fff; box-shadow: 0 4px 14px rgba(202,111,30,0.35); }
+  .tl-dot.red    { background: #922B21; color: #fff; box-shadow: 0 4px 14px rgba(146,43,33,0.35); }
+  .tl-dot.purple { background: #6C3483; color: #fff; box-shadow: 0 4px 14px rgba(108,52,131,0.35); }
+
+  .tl-card {
+    background: var(--white); border-radius: 16px;
+    padding: 22px 26px; flex: 1;
+    box-shadow: 0 2px 14px rgba(26,43,74,0.08);
+  }
+
+  .tl-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
+  .tl-head h3 { font-size: 18px; font-weight: 800; color: var(--navy); }
+  .t-badge {
+    background: var(--cream); color: var(--muted);
+    font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 20px;
+  }
+
+  .tl-card p { font-size: 14px; color: #4a4a5a; margin-bottom: 12px; }
+  .tl-card ul { padding-left: 18px; margin-bottom: 12px; }
+  .tl-card ul li { font-size: 14px; color: #4a4a5a; margin-bottom: 4px; }
+
+  /* ── Link box (dark strip) ─────────────────────────────── */
+  .lbox {
+    background: var(--navy); border-radius: 10px;
+    padding: 13px 18px; display: flex; align-items: center;
+    gap: 14px; margin-bottom: 10px; flex-wrap: wrap;
+  }
+  .lbox-txt { color: rgba(255,255,255,0.72); font-size: 13px; flex: 1; }
+  .lbox-txt strong { color: #fff; }
+  .lbtn {
+    background: var(--yellow); color: var(--navy);
+    font-size: 13px; font-weight: 800; padding: 9px 20px; border-radius: 8px;
+    text-decoration: none; white-space: nowrap;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: background .15s;
+  }
+  .lbtn:hover { background: #ffd166; }
+  .lbtn.off { background: #d8d2c6; color: #8a8070; pointer-events: none; cursor: default; }
+
+  /* ── Note / warning ────────────────────────────────────── */
+  .note {
+    border-radius: 0 8px 8px 0; padding: 10px 14px;
+    font-size: 13px; margin-bottom: 12px; border-left: 3px solid;
+  }
+  .note-yellow { background: var(--yellow2); border-color: var(--yellow); color: #6b4e00; }
+  .note-navy   { background: #e8f0fb; border-color: var(--navy); color: #1a3a6a; }
+  .note-green  { background: #e6f5ec; border-color: #1E8449; color: #14522e; }
+  .note-red    { background: #fce8e8; border-color: #922B21; color: #7a1818; }
+  .note strong { font-weight: 700; }
+
+  /* ── Tags ──────────────────────────────────────────────── */
+  .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 6px; }
+  .tag { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+  .tag-y  { background: var(--yellow2); color: #856404; border: 1px solid var(--yellow); }
+  .tag-b  { background: #e8f0fb; color: #1a5dad; border: 1px solid #a8c4f5; }
+  .tag-g  { background: #e6f5ec; color: #1a7a3c; border: 1px solid #7ec99a; }
+  .tag-o  { background: #fdebd0; color: #a05010; border: 1px solid #f5c070; }
+  .tag-p  { background: #e8daef; color: #5a2a6a; border: 1px solid #c090d0; }
+  .tag-r  { background: #fce8e8; color: #922B21; border: 1px solid #f5a0a0; }
+  .tag-gr { background: var(--cream); color: var(--muted); border: 1px solid var(--grey); }
+
+  /* ── Snowball progress bar ─────────────────────────────── */
+  .progress {
+    display: flex; align-items: center; justify-content: center;
+    gap: 6px; padding: 20px 0 4px; flex-wrap: wrap;
+  }
+  .pr-step {
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    min-width: 72px; text-align: center;
+  }
+  .pr-circle {
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 11px; transition: transform .2s;
+  }
+  .pr-label { font-size: 10px; color: var(--muted); line-height: 1.2; }
+  .pr-arrow { font-size: 18px; color: var(--grey); margin-top: -10px; }
+
+  /* ── Wiki structure ─────────────────────────────────────── */
+  .wiki-grid {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 14px 0;
+  }
+  .wiki-sec {
+    background: var(--navy); color: white;
+    border-radius: 10px; padding: 12px 10px; text-align: center;
+  }
+  .wiki-sec .wn { font-size: 22px; font-weight: 900; color: var(--yellow); }
+  .wiki-sec .wl { font-size: 11px; margin-top: 4px; line-height: 1.3; }
+  .wiki-sec.done { background: #1E8449; }
+  .wiki-sec.partial { background: var(--navy2); }
+
+  /* ── Topics grid ────────────────────────────────────────── */
+  .topic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+  .topic-card { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .topic-hd { padding: 13px 18px; color: white; font-weight: 800; font-size: 14px; }
+  .topic-bd { padding: 14px 18px; }
+  .topic-bd ul { list-style: none; padding: 0; }
+  .topic-bd ul li { padding: 5px 0; padding-left: 16px; position: relative; font-size: 13px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .topic-bd ul li:last-child { border-bottom: none; }
+  .topic-bd ul li::before { content: '›'; position: absolute; left: 0; font-weight: 800; }
+  .topic-task { margin-top: 10px; background: rgba(0,0,0,0.05); border-radius: 7px; padding: 9px 12px; font-size: 12px; }
+  .topic-task strong { display: block; font-size: 12px; margin-bottom: 2px; }
+  .g1-hd { background: #2874A6; } .g1-bd { background: #EBF5FB; } .g1-bd ul li::before { color: #2874A6; }
+  .g2-hd { background: #1E8449; } .g2-bd { background: #D5F5E3; } .g2-bd ul li::before { color: #1E8449; }
+  .g3-hd { background: #CA6F1E; } .g3-bd { background: #FDEBD0; } .g3-bd ul li::before { color: #CA6F1E; }
+  .g4-hd { background: #6C3483; } .g4-bd { background: #E8DAEF; } .g4-bd ul li::before { color: #6C3483; }
+
+  /* ── Roles ──────────────────────────────────────────────── */
+  .roles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+  .role-card {
+    background: white; border-radius: 10px; padding: 14px;
+    border-top: 3px solid var(--yellow);
+    box-shadow: 0 1px 6px rgba(26,43,74,0.07);
+  }
+  .role-icon { font-size: 20px; margin-bottom: 5px; }
+  .role-name { font-weight: 800; font-size: 13px; color: var(--navy); margin-bottom: 2px; }
+  .role-desc { font-size: 12px; color: var(--muted); }
+
+  /* ── Groups table ───────────────────────────────────────── */
+  .gtable { width: 100%; border-collapse: collapse; font-size: 13px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(26,43,74,0.08); }
+  .gtable th { background: var(--navy); color: white; padding: 12px 14px; text-align: center; font-weight: 700; }
+  .gtable th small { font-weight: 400; opacity: .7; display: block; font-size: 11px; }
+  .gtable td { padding: 10px 14px; text-align: center; border-bottom: 1px solid #eee; }
+  .gtable tr:last-child td { border-bottom: none; }
+  .gb  { background: #EBF5FB; }
+  .gg  { background: #D5F5E3; }
+  .go  { background: #FDEBD0; }
+  .gp  { background: #E8DAEF; }
+  .gtlink { display: inline-block; margin-top: 4px; font-size: 11px; color: #1a5dad; background: rgba(255,255,255,0.8); border: 1px solid #a8c4f5; padding: 2px 10px; border-radius: 10px; text-decoration: none; }
+  .gtlink:hover { background: white; }
+
+  /* ── Floco blocks (per-group questions) ─────────────────── */
+  .floco-block { border-radius: 12px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+  .fb-header { padding: 11px 18px; font-weight: 800; font-size: 14px; color: white; }
+  .fb-list { padding: 14px 18px 14px 34px; margin: 0; background: white; }
+  .fb-list li { font-size: 13px; color: #3a3a4a; margin-bottom: 9px; line-height: 1.5; }
+  .fb-list li:last-child { margin-bottom: 0; }
+  .fb-list li strong { color: var(--navy); }
+  .fb-g1 .fb-header { background: #2874A6; }
+  .fb-g2 .fb-header { background: #1E8449; }
+  .fb-g3 .fb-header { background: #CA6F1E; }
+  .fb-g4 .fb-header { background: #6C3483; }
+  .fb-g1 .fb-list { border-left: 4px solid #2874A6; }
+  .fb-g2 .fb-list { border-left: 4px solid #1E8449; }
+  .fb-g3 .fb-list { border-left: 4px solid #CA6F1E; }
+  .fb-g4 .fb-list { border-left: 4px solid #6C3483; }
+
+  /* ── Group decoder ───────────────────────────────────────── */
+  .decoder-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .dec-card {
+    border-radius: 12px; padding: 18px 10px;
+    text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    color: white;
+  }
+  .dec-num {
+    font-size: 42px; font-weight: 900; line-height: 1;
+    opacity: .18; position: absolute; top: 10px; right: 14px;
+  }
+  .dec-card { position: relative; }
+  .dec-icon { font-size: 28px; margin-bottom: 6px; }
+  .dec-name { font-size: 14px; font-weight: 800; margin-bottom: 4px; }
+  .dec-theme { font-size: 11px; opacity: .85; line-height: 1.3; }
+  .dec-g1 { background: #2874A6; }
+  .dec-g2 { background: #1E8449; }
+  .dec-g3 { background: #CA6F1E; }
+  .dec-g4 { background: #6C3483; }
+  @media (max-width: 640px) { .decoder-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  /* ── Footer ─────────────────────────────────────────────── */
+  footer { background: var(--navy); color: rgba(255,255,255,0.45); text-align: center; padding: 26px; font-size: 12px; margin-top: 20px; }
+  footer strong { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 34px; }
+    .topic-grid { grid-template-columns: 1fr; }
+    .roles-grid  { grid-template-columns: 1fr 1fr; }
+    .wiki-grid   { grid-template-columns: repeat(3, 1fr); }
+    .timeline::before { left: 27px; }
+    .tl-dot { width: 54px; height: 54px; font-size: 18px; }
+  }
+
+  @media print {
+    body { background: white; }
+    .hero, .tl-dot, .wiki-sec, .gtable th, .lbox, .topic-hd { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Aprendizagem<br><span>Colaborativa</span> &amp; CSCL</h1>
+    <p class="hero-sub">Hoje você vai construir conhecimento em camadas: sozinho, em dupla e em grupo; e publicar uma Wiki colaborativo sobre CSCL.</p >
+    <div class="hero-pills">
+      <span class="pill">⏱ ~3h</span>
+      <span class="pill">❄️ → 👥 → 👥👥 Forward Snowball</span>
+      <span class="pill">💻 Lab de Informática</span>
+      <span class="pill">🌐 Produto: Wiki Colaborativa</span>
+      <span class="pill">✏️ Revisão por pares ao final</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTENT ══ -->
+<div class="content">
+
+  <br>
+  <h2 class="sec-title">Roteiro</h2>
+
+  <div class="timeline">
+
+    <!-- 1 - Grupo e tema -->
+    <div class="tl-item">
+      <div class="tl-dot">1</div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>🎲 Descubra seu Grupo — Contagem Rápida</h3>
+          <span class="t-badge">3 min</span>
+        </div>
+        <p>O professor vai contar em voz alta <strong>1 – 2 – 3 – 4</strong>, repetindo ao redor da sala. O número que você receber é o seu grupo. Localize-o no decodificador abaixo:</p>
+
+        <div class="decoder-grid">
+          <div class="dec-card dec-g1">
+            <div class="dec-num">1</div>
+            <div class="dec-icon">🧠</div>
+            <div class="dec-name">Grupo 1</div>
+            <div class="dec-theme">Bases Teóricas do CSCL</div>
+          </div>
+          <div class="dec-card dec-g2">
+            <div class="dec-num">2</div>
+            <div class="dec-icon">🔑</div>
+            <div class="dec-name">Grupo 2</div>
+            <div class="dec-theme">Elementos da Aprendizagem Cooperativa</div>
+          </div>
+          <div class="dec-card dec-g3">
+            <div class="dec-num">3</div>
+            <div class="dec-icon">🎯</div>
+            <div class="dec-name">Grupo 3</div>
+            <div class="dec-theme">Técnicas Aplicadas em Sala de Aula</div>
+          </div>
+          <div class="dec-card dec-g4">
+            <div class="dec-num">4</div>
+            <div class="dec-icon">⚖️</div>
+            <div class="dec-name">Grupo 4</div>
+            <div class="dec-theme">Mediação, Avaliação e Conflitos</div>
+          </div>
+        </div>
+
+        <div class="note note-navy" style="margin-top:14px;">
+          <strong>👥 Formando as duplas dentro do seu grupo:</strong><br>
+          Cada grupo terá <strong>4 estudantes = 2 duplas</strong>. Identifique os outros 3 colegas com o mesmo número. Combinem rapidamente: os <strong>2 que se sentam mais próximos</strong> formam a <strong>Dupla 1</strong>; os outros 2 formam a <strong>Dupla 2</strong>. Anote o nome do seu par — você vai trabalhar junto nas próximas fases.
+        </div>
+
+        <div class="tags" style="margin-top:10px;"><span class="tag tag-gr">Turma toda</span><span class="tag tag-b">3 min</span></div>
+      </div>
+    </div>
+
+    <!-- 2 - Floco Individual -->
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1A5276;color:white;box-shadow:0 4px 14px rgba(26,82,118,0.4);">2</div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>❄️ Fase Floco — Reflexão Individual</h3>
+          <span class="t-badge">15 min</span>
+        </div>
+        <p>Leia a seção do material referente ao seu tema. Responda <strong>sozinho</strong> às 5 perguntas do seu grupo no Google Doc; cada resposta vai alimentar uma seção da Wiki. Encontre o bloco do <strong>seu</strong> grupo abaixo:</p>
+
+        <!-- G1 -->
+        <div class="floco-block fb-g1">
+          <div class="fb-header">🧠 Grupo 1 — Bases Teóricas do CSCL</div>
+          <ol class="fb-list">
+            <li><strong>Conceito Central:</strong> Defina em 1–2 frases a ideia central de cada uma das 5 áreas teóricas — foco no <em>conceito</em>, não no autor: Behaviorismo (reforço e motivação), Cognitivismo (desenvolvimento cognitivo e construção do conhecimento), Sócio-construtivismo (aprendizagem pela interação social), Aprendizagem Social (observação e modelagem) e Cooperação vs. Competição (interdependência entre membros do grupo).</li>
+            <li><strong>Base Teórica:</strong> Como cada uma dessas 5 áreas explica de forma diferente o que acontece quando pessoas aprendem juntas? (Ex: Skinner → reforço grupal; Piaget → conflito cognitivo; Vygotsky → ZDP e mediação; Bandura → modelagem de pares; Deutsch → interdependência positiva/negativa.)</li>
+            <li><strong>Exemplo Prático:</strong> Escolha 2 das 5 áreas e descreva como cada uma se manifesta numa atividade colaborativa online concreta do seu contexto. Seja específico: que comportamentos ou dinâmicas você observaria?</li>
+            <li><strong>Ferramenta Digital:</strong> Para as 2 áreas escolhidas, indique qual ferramenta digital apoia melhor cada perspectiva e por quê — a justificativa deve estar na ideia central da área, não apenas na funcionalidade da ferramenta.</li>
+            <li><strong>Desafio:</strong> Qual é a maior tensão ou contradição entre essas 5 perspectivas ao projetar uma atividade CSCL? Como um professor pode navegar essas diferenças na prática sem ignorar nenhuma delas?</li>
+          </ol>
+        </div>
+
+        <!-- G2 -->
+        <div class="floco-block fb-g2">
+          <div class="fb-header">🔑 Grupo 2 — Elementos da Aprendizagem Cooperativa</div>
+          <ol class="fb-list">
+            <li><strong>Conceito Central:</strong> Quais são os 5 elementos básicos da Aprendizagem Cooperativa (Johnson &amp; Johnson)? Defina cada um em 1 frase: interdependência positiva, responsabilidade individual, interação promotora, habilidades sociais e processamento grupal.</li>
+            <li><strong>Base Teórica:</strong> Como a teoria da interdependência social (Deutsch) justifica a necessidade de cada um dos 5 elementos? O que acontece quando um deles está ausente?</li>
+            <li><strong>Exemplo Prático:</strong> Projete uma atividade usando AC Formal para sua disciplina. Especifique como você garantiria cada um dos 5 elementos na prática — não apenas os mencione.</li>
+            <li><strong>Ferramenta Digital:</strong> Qual tipo de AC (formal, informal, grupos de base ou controvérsia acadêmica) é mais adequado para ambientes virtuais assíncronos? Qual ferramenta usaria e por quê?</li>
+            <li><strong>Desafio:</strong> Qual dos 5 elementos é mais difícil de garantir em grupos online? Por quê e como você contornaria isso na sua prática docente?</li>
+          </ol>
+        </div>
+
+        <!-- G3 -->
+        <div class="floco-block fb-g3">
+          <div class="fb-header">🎯 Grupo 3 — Técnicas Aplicadas em Sala de Aula</div>
+          <ol class="fb-list">
+            <li><strong>Conceito Central:</strong> Descreva em 1–2 frases cada técnica: Jigsaw, Forward Snowball, Snowball, Circle of Interviews, Circle of Writers e Review Pairs. O que cada uma tem de único?</li>
+            <li><strong>Base Teórica:</strong> O que essas técnicas têm em comum em termos de estrutura colaborativa? Qual elemento da AC (Johnson &amp; Johnson) cada uma privilegia mais?</li>
+            <li><strong>Exemplo Prático:</strong> Escolha 2 técnicas e descreva como aplicá-las numa disciplina online: tempo de cada fase, tamanho dos grupos, produto esperado e como os grupos interagem digitalmente.</li>
+            <li><strong>Ferramenta Digital:</strong> Para cada técnica escolhida, indique a ferramenta digital mais adequada para cada fase e como configurá-la para o grupo funcionar sem intervenção constante do professor.</li>
+            <li><strong>Desafio:</strong> Qual das 6 técnicas é mais difícil de adaptar para o ambiente 100% online? Por quê e como você contornaria essa dificuldade?</li>
+          </ol>
+        </div>
+
+        <!-- G4 -->
+        <div class="floco-block fb-g4">
+          <div class="fb-header">⚖️ Grupo 4 — Mediação, Avaliação e Conflitos</div>
+          <ol class="fb-list">
+            <li><strong>Conceito Central:</strong> Quais são as 4 dimensões da mediação docente online? E como Deutsch distingue conflito construtivo de destrutivo? Defina cada conceito em 2 frases.</li>
+            <li><strong>Base Teórica:</strong> Como a teoria da cooperação e competição (Deutsch) explica por que conflitos em grupos colaborativos podem ser tanto úteis quanto prejudiciais? O que determina o curso do conflito?</li>
+            <li><strong>Exemplo Prático:</strong> Crie uma rubrica com 3 critérios para avaliar a colaboração online. Depois, descreva um conflito típico em grupo online e como o professor pode intervir para torná-lo construtivo.</li>
+            <li><strong>Ferramenta Digital:</strong> Qual ferramenta você usaria para monitorar a participação individual e identificar conflitos emergentes num grupo online? Como interpretaria os dados para agir preventivamente?</li>
+            <li><strong>Desafio:</strong> Qual é o maior desafio da mediação docente em ambientes assíncronos (onde o professor não está presente em tempo real)? Proponha uma estratégia preventiva concreta.</li>
+          </ol>
+        </div>
+        <div class="tags"><span class="tag tag-b">Google Docs</span><span class="tag tag-gr">Individual — silêncio</span></div>
+      </div>
+    </div>
+
+    <!-- 3 - Dupla -->
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#1F618D;color:white;box-shadow:0 4px 14px rgba(31,97,141,0.4);">3</div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>👥 Fase Dupla</h3>
+          <span class="t-badge">15 min</span>
+        </div>
+
+        <div class="note note-navy" style="margin-bottom:14px;">
+          <strong>👆 O que fazer agora: 2 ações em sequência:</strong><br>
+          <strong>1.</strong> Comperem suas respostas. <br>
+          <strong>2.</strong> Escrevam um documento em conjunto (Google Docs).
+        </div>
+
+        <div class="tags" style="margin-top:10px;"><span class="tag tag-b">Google Docs</span><span class="tag tag-gr">Duplas de mesmo tema</span></div>
+      </div>
+    </div>
+
+    <!-- 4 - Grupo de 4 -->
+    <div class="tl-item">
+      <div class="tl-dot green">4</div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>👥👥 Fase Grupo de 4 — Desenvolvimento do Wiki</h3>
+          <span class="t-badge">~30 min</span>
+        </div>
+        <div class="note note-navy" style="margin-bottom:14px;">
+          <strong>👆 O que fazer agora: 2 ações em sequência:</strong><br>
+          <strong>1.</strong> Comperem as respostas das duplas. <br>
+          <strong>2.</strong> Negociem, achem um consenso e escrevam um documento em conjunto (Google Docs). <br>
+          <strong>3.</strong> Copiem o conteúdo final para a página da Wiki do seu grupo (Moodle).
+        </div>
+        <div class="tags"><span class="tag tag-b">Google Docs</span><span class="tag tag-b">Wiki (Moodle)</span><span class="tag tag-gr">Grupo Completo</span></div>
+      </div>
+    </div>
+
+    <!-- 5 - Gallery Walk -->
+    <div class="tl-item">
+      <div class="tl-dot orange">5</div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>🚶 Gallery Walk Digital</h3>
+          <span class="t-badge">10 min</span>
+        </div>
+        <p>Visite individualmente as páginas da Wiki dos <strong>outros 3 grupos</strong>.
+        <div class="note note-navy">
+          <strong>💡 Atenção:</strong> na próxima etapa, você irá tentar qualificar algum trecho do wiki. Leia com cuidado!
+        </div>
+
+        <div class="tags" style="margin-top:6px;"><span class="tag tag-b">Wiki Moodle</span><span class="tag tag-gr">Individual</span></div>
+      </div>
+    </div>
+
+    <!-- 7 - Revisão por Pares -->
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#117A65;color:white;box-shadow:0 4px 14px rgba(17,122,101,0.4);">6</div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>✏️ Revisão por Pares — Qualificação do Wiki</h3>
+          <span class="t-badge">15 min</span>
+        </div>
+
+        <p>
+          Assuma o papel de revisor/crítico e encontre um trecho no qual você se sentiu inseguro ou discordou durante a Gallery Walk.
+        </p>
+
+        <p style="font-size:14px; color:#4a4a5a; margin-bottom:10px;">Registre sua revisão <strong>diretamente na Wiki revisada</strong> — adicione um bloco <em>"💡 Nota do Revisor (Grupo X)"</em> ao final da seção, com suas sugestões. Não apague o conteúdo original, complemente-o.</p>
+
+        <div class="tags" style="margin-top:8px;"><span class="tag tag-o">Wiki - Moodle</span><span class="tag tag-gr">Individual</span></div>
+      </div>
+    </div>
+
+    <!-- 8 - Fechamento -->
+    <div class="tl-item">
+      <div class="tl-dot" style="background:#2C3E50;color:white;box-shadow:0 4px 14px rgba(44,62,80,0.35);">8</div>
+      <div class="tl-card">
+        <div class="tl-head">
+          <h3>💭 Reflexão e Fechamento</h3>
+          <span class="t-badge">10 min</span>
+        </div>
+        <p>Responda uma pergunta no <strong>fórum do Moodle</strong> sobre aprendizagem ativa.</p>
+        <div class="note note-navy">
+          <strong>📌 As 2 perguntas finais:</strong><br>
+          1. Você percebe a IA como um problema ou um facilitador dentro do contexto de Aprendizagem Ativa? Explique sua resposta. <br>
+        </div>
+        <div class="tags"><span class="tag tag-b">Fórum do Moodle</span><span class="tag tag-gr">Individual</span></div>
+      </div>
+    </div>
+
+  </div><!-- /timeline -->
+
+
+  <!-- ══ TEMAS ══ -->
+  <div style="margin-top:52px;">
+    <h2 class="sec-title">Os 4 Temas da Wiki</h2>
+    <p style="text-align:center; color:var(--muted); font-size:14px; margin-bottom:24px; margin-top:-24px;">Cada grupo é responsável por uma página. A Wiki só estará completa com os 4 — por isso o Gallery Walk importa.</p>
+
+    <div class="topic-grid">
+      <div class="topic-card">
+        <div class="topic-hd g1-hd">🧠 Grupo 1 — Bases Teóricas do CSCL</div>
+        <div class="topic-bd g1-bd">
+          <ul>
+            <li><strong>Behaviorismo</strong> — B. F. Skinner: reforço e motivação</li>
+            <li><strong>Cognitivismo</strong> — Jean Piaget: desenvolvimento cognitivo e construção do conhecimento</li>
+            <li><strong>Sócio-construtivismo</strong> — Lev Vygotsky: aprendizagem pela interação social</li>
+            <li><strong>Aprendizagem Social</strong> — Albert Bandura: observação e modelagem</li>
+            <li><strong>Cooperação vs. Competição</strong> — Morton Deutsch: interdependência entre membros do grupo</li>
+          </ul>
+          <div class="topic-task">
+            <strong>📌 Seção 3 — Exemplo Prático:</strong>
+            Escolha 2 das 5 áreas e mostre como cada uma se manifesta numa atividade colaborativa online concreta do seu contexto.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-hd g2-hd">🔑 Grupo 2 — Elementos da Aprendizagem Cooperativa</div>
+        <div class="topic-bd g2-bd">
+          <ul>
+            <li>5 elementos básicos (Johnson &amp; Johnson): interdependência positiva, responsabilidade individual, interação promotora, habilidades sociais, processamento grupal</li>
+            <li>Teoria da interdependência social (Deutsch): positiva vs. negativa</li>
+            <li>Tipos de AC: formal, informal, grupos de base e controvérsia acadêmica</li>
+            <li>O que acontece quando um dos 5 elementos está ausente</li>
+          </ul>
+          <div class="topic-task">
+            <strong>📌 Seção 3 — Exemplo Prático:</strong>
+            Projete uma atividade de AC Formal para sua disciplina garantindo os 5 elementos — não apenas os cite, mostre como.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-hd g3-hd">🎯 Grupo 3 — Técnicas Aplicadas em Sala de Aula</div>
+        <div class="topic-bd g3-bd">
+          <ul>
+            <li>Jigsaw: especialização por subtema e reagrupamento</li>
+            <li>Forward Snowball: individual → dupla → grupo (usada nesta aula!)</li>
+            <li>Snowball, Circle of Interviews, Circle of Writers, Review Pairs</li>
+            <li>Princípios estruturais comuns e adaptação para ambientes online</li>
+          </ul>
+          <div class="topic-task">
+            <strong>📌 Seção 3 — Exemplo Prático:</strong>
+            Escolha 2 técnicas e descreva sua aplicação online: fases, tempo, tamanho dos grupos, produto e ferramenta digital.
+          </div>
+        </div>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-hd g4-hd">⚖️ Grupo 4 — Mediação, Avaliação e Conflitos</div>
+        <div class="topic-bd g4-bd">
+          <ul>
+            <li>4 dimensões da mediação docente: pedagógica, social, gerencial e técnica</li>
+            <li>Conflito construtivo vs. destrutivo (Deutsch): o que determina o curso?</li>
+            <li>Avaliação colaborativa: processo, produto e desempenho individual</li>
+            <li>Estratégias de prevenção e intervenção em conflitos online</li>
+          </ul>
+          <div class="topic-task">
+            <strong>📌 Seção 3 — Exemplo Prático:</strong>
+            Crie uma rubrica (3 critérios) para avaliar colaboração online e descreva como transformar um conflito destrutivo em construtivo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ WIKI STRUCTURE ══ -->
+  <div style="margin-top:48px;">
+    <h2 class="sec-title">Estrutura da Página da Wiki</h2>
+    <p style="text-align:center; color:var(--muted); font-size:14px; margin-top:-24px; margin-bottom:20px;">Todas as páginas seguem o mesmo template no Google Sites. Preencha em ordem.</p>
+
+    <div style="background:white; border-radius:14px; padding:24px; box-shadow:0 2px 10px rgba(26,43,74,0.08);">
+      <div class="wiki-grid">
+        <div class="wiki-sec"><div class="wn">1</div><div class="wl">Conceito Central</div></div>
+        <div class="wiki-sec"><div class="wn">2</div><div class="wl">Base Teórica</div></div>
+        <div class="wiki-sec"><div class="wn">3</div><div class="wl">Exemplo Prático</div></div>
+        <div class="wiki-sec"><div class="wn">4</div><div class="wl">Ferramenta Digital</div></div>
+        <div class="wiki-sec"><div class="wn">5</div><div class="wl">Desafio de Implementação</div></div>
+      </div>
+      <table style="margin-top:16px; font-size:13px; width:100%; border-collapse:collapse;">
+        <thead>
+          <tr>
+            <th style="background:#1a2b4a;color:white;padding:9px 12px;text-align:left;">Seção</th>
+            <th style="background:#1a2b4a;color:white;padding:9px 12px;text-align:left;">O que escrever</th>
+            <th style="background:#1a2b4a;color:white;padding:9px 12px;text-align:left;">Fase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:9px 12px;border-bottom:1px solid #eee;"><strong>1. Conceito Central</strong></td><td style="padding:9px 12px;border-bottom:1px solid #eee;">Definição em até 3 frases, nas palavras do grupo — sem copiar o material</td><td style="padding:9px 12px;border-bottom:1px solid #eee;background:#f0ece3;">Dupla</td></tr>
+          <tr><td style="padding:9px 12px;border-bottom:1px solid #eee;"><strong>2. Base Teórica</strong></td><td style="padding:9px 12px;border-bottom:1px solid #eee;">Conexão com Vygotsky, Ausubel ou CSCL — como a teoria explica o tema?</td><td style="padding:9px 12px;border-bottom:1px solid #eee;background:#f0ece3;">Dupla</td></tr>
+          <tr><td style="padding:9px 12px;border-bottom:1px solid #eee;"><strong>3. Exemplo Prático</strong></td><td style="padding:9px 12px;border-bottom:1px solid #eee;">Cenário real de uso em AVA ou sala de aula — específico, não genérico</td><td style="padding:9px 12px;border-bottom:1px solid #eee;background:#D5F5E3;">Grupo de 4</td></tr>
+          <tr><td style="padding:9px 12px;border-bottom:1px solid #eee;"><strong>4. Ferramenta Digital</strong></td><td style="padding:9px 12px;border-bottom:1px solid #eee;">Qual ferramenta suporta este tema, como configurar e dica de uso</td><td style="padding:9px 12px;border-bottom:1px solid #eee;background:#D5F5E3;">Grupo de 4</td></tr>
+          <tr><td style="padding:9px 12px;"><strong>5. Desafio de Implementação</strong></td><td style="padding:9px 12px;">Principal barreira de implementação + estratégia concreta para superá-la</td><td style="padding:9px 12px;background:#D5F5E3;">Grupo de 4</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</div><!-- /content -->
+
+<footer>
+  <strong>Rodrigo Prestes Machado</strong> &nbsp;·&nbsp;
+  rodrigo.prestes@poa.ifrs.edu.br &nbsp;·&nbsp;
+  Mestrado Profissional em Informática na Educação (MPIE) &nbsp;·&nbsp; 2026
+</footer>
+
+</body>
+</html>
