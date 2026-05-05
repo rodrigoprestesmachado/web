@@ -23,8 +23,8 @@ JavaScript and XML), Promise, Vue, etc.
 
 ### Web Programming II
 
-**Technologies:** Microprofile, JPA (Java Persistence API), Web Services (XML
-and Rest), Web Sockets, etc.
+**Technologies:** REST (Representational State Transfer), Microservices: Rest
+Clients, JWT (JSON Web Token), Failure Tolerance, Logging, etc.
 {: .fs-3 }
 
 * [Web](https://pw2.rpmhub.dev)
@@ -36,6 +36,16 @@ and Rest), Web Sockets, etc.
 {: .fs-3 }
 
 * [Web](https://vvs.rpmhub.dev)
+{: .fs-3 }
+
+### Topics in Artificial Intelligence
+
+**Technologies:** Quarkus, LangChain4j, Ollama, etc.
+**Concepts:** LLM (Large Language Models), RAG (Retrieval-Augmented Generation),
+Tool Integration, MCP (Model Control Protocol), A2A (Agent-to-Agent) etc.
+{: .fs-3 }
+
+* [Web](https://ai.rpmhub.dev)
 {: .fs-3 }
 
 ## Master's in Informatics in Education
